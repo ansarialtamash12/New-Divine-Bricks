@@ -24,16 +24,15 @@ export default function Navbar() {
   }, [pathname]);
 
   const isHomePage = pathname === "/";
-  // ✅ Transparent ONLY on home page when not scrolled
   const isTransparent = isHomePage && !isScrolled;
 
   const navLinks = [
     { name: "Find my Agent", href: "/find-agent" },
     { name: "Sell My Property", href: "/sell" },
     { name: "TruEstimate™", href: "/truest-imate" },
-    { name: "Dubai Transactions", href: "/transactions" },
+    { name: "India Transactions", href: "/transactions" },
     { name: "New Projects", href: "/new-projects" },
-    { name: "Divine Bricks", href: "/my-bayut" },
+    // { name: "Divine Bricks", href: "/my-bayut" },
   ];
 
   return (
@@ -44,52 +43,95 @@ export default function Navbar() {
         } ${
           isTransparent
             ? "bg-transparent border-b border-transparent"
-            : "bg-white/80 backdrop-blur-md border-b border-gray-200/60 shadow-sm"
+            : "bg-[#F7F4ED]/85 backdrop-blur-md border-b border-[#59636B]/20 shadow-sm"
         }`}
       >
         <div className="max-w-7xl mx-auto px-3 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16 sm:h-20">
+            {/* ===== LOGO ===== */}
             <div className="flex-shrink-0 flex items-center">
-              <Link href="/">
-                <Image
-                  src="/divine-bricks-logo.png"
-                  alt="Divine Logo"
-                  width={120}
-                  height={40}
-                  className="object-contain h-9 sm:h-10 w-auto"
-                  priority
-                />
+              <Link href="/" className="group flex items-center">
+                <div
+                  className={`flex items-center justify-center rounded-2xl transition-all duration-500 ease-out ${
+                    isTransparent
+                      ? "px-3 py-1.5 bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.4)] group-hover:bg-white/15"
+                      : "px-0 py-0 bg-transparent border border-transparent"
+                  }`}
+                >
+                  <Image
+                    src="/3G_Realtors_icon.png"
+                    alt="Divine Logo"
+                    width={120}
+                    height={40}
+                    className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
+                      isTransparent
+                        ? "h-8 sm:h-9 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110"
+                        : "h-9 sm:h-10"
+                    }`}
+                    priority
+                  />
+                </div>
               </Link>
             </div>
 
+            {/* ===== DESKTOP NAV ===== */}
             <nav className="hidden lg:flex items-center space-x-1 xl:space-x-2">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="text-gray-700 hover:text-[#00d16a] text-sm font-medium transition-all duration-200 px-3 py-2 rounded-xl hover:bg-[#00d16a]/5 whitespace-nowrap"
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    style={
+                      isTransparent && !isActive
+                        ? { color: "#ffffff" }
+                        : isActive
+                        ? { color: "#F5A623" }
+                        : { color: "#171A1C" }
+                    }
+                    className={`relative text-sm font-medium transition-all duration-200 px-3 py-2 rounded-xl whitespace-nowrap ${
+                      isActive
+                        ? "bg-[#F5A623]/10"
+                        : isTransparent
+                        ? "hover:text-[#F5A623] hover:bg-white/10"
+                        : "hover:text-[#F5A623] hover:bg-[#F5A623]/10"
+                    }`}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
             </nav>
 
             <div className="flex items-center gap-2 sm:gap-3">
+              {/* ===== HAMBURGER ===== */}
               <button
-                className="lg:hidden p-2 border border-gray-200 rounded-xl hover:bg-gray-50 transition-all duration-200 active:scale-95"
+                className={`lg:hidden p-2.5 rounded-2xl transition-all duration-500 ease-out active:scale-95 ${
+                  isTransparent
+                    ? "bg-white/10 backdrop-blur-md border border-white/20 shadow-[0_4px_20px_-6px_rgba(0,0,0,0.4)] hover:bg-white/20"
+                    : "bg-white border border-[#59636B]/20 hover:bg-[#F7F4ED]"
+                }`}
                 onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                 aria-label="Toggle menu"
               >
                 {isMobileMenuOpen ? (
-                  <X className="w-5 h-5 text-gray-700" />
+                  <X
+                    className={`w-5 h-5 transition-colors ${
+                      isTransparent ? "text-white" : "text-[#59636B]"
+                    }`}
+                  />
                 ) : (
-                  <Menu className="w-5 h-5 text-gray-700" />
+                  <Menu
+                    className={`w-5 h-5 transition-colors ${
+                      isTransparent ? "text-white" : "text-[#59636B]"
+                    }`}
+                  />
                 )}
               </button>
 
               <button
                 onClick={() => setIsLoginModalOpen(true)}
-                className="hidden sm:block px-4 py-2.5 bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] text-white rounded-xl text-xs sm:text-sm font-semibold hover:shadow-lg hover:shadow-[#0e4b3e]/20 transition-all duration-200 active:scale-95 whitespace-nowrap"
+                className="hidden sm:block px-4 py-2.5 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] rounded-xl text-xs sm:text-sm font-bold hover:shadow-lg hover:shadow-[#F5A623]/30 transition-all duration-200 active:scale-95 whitespace-nowrap"
               >
                 Sign up or Log in
               </button>
@@ -97,53 +139,66 @@ export default function Navbar() {
           </div>
         </div>
 
-        {isMobileMenuOpen && (
-          <div className="lg:hidden bg-white/95 backdrop-blur-xl border-t border-gray-200/60 animate-slideDown">
+        {/* ===== MOBILE MENU ===== */}
+        <div
+          className={`lg:hidden overflow-hidden transition-all duration-500 ease-out ${
+            isMobileMenuOpen ? "max-h-[520px] opacity-100" : "max-h-0 opacity-0"
+          }`}
+        >
+          <div className="bg-[#F7F4ED]/95 backdrop-blur-xl border-t border-[#59636B]/20 shadow-[0_8px_30px_-12px_rgba(0,0,0,0.15)]">
             <div className="px-3 sm:px-4 pt-3 pb-4 space-y-1">
-              {navLinks.map((link) => (
-                <Link
-                  key={link.name}
-                  href={link.href}
-                  className="block px-4 py-3 rounded-xl text-sm font-medium text-gray-700 hover:text-[#00d16a] hover:bg-[#00d16a]/5 transition-all duration-200"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {link.name}
-                </Link>
-              ))}
+              {navLinks.map((link, i) => {
+                const isActive = pathname === link.href;
+                return (
+                  <Link
+                    key={link.name}
+                    href={link.href}
+                    style={{ transitionDelay: `${i * 25}ms` }}
+                    className={`block px-4 py-3 rounded-xl text-sm font-medium transition-all duration-300 ${
+                      isActive
+                        ? "text-[#F5A623] bg-[#F5A623]/10"
+                        : "text-[#59636B] hover:text-[#F5A623] hover:bg-[#F5A623]/10"
+                    }`}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {link.name}
+                  </Link>
+                );
+              })}
 
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
                   setIsLoginModalOpen(true);
                 }}
-                className="w-full mt-3 px-4 py-3 bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] text-white rounded-xl text-sm font-semibold transition-all duration-200 sm:hidden active:scale-[0.98]"
+                className="w-full mt-3 px-4 py-3 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] rounded-xl text-sm font-bold transition-all duration-200 sm:hidden active:scale-[0.98] shadow-[0_4px_14px_-4px_rgba(245,166,35,0.5)]"
               >
                 Sign up or Log in
               </button>
             </div>
           </div>
-        )}
+        </div>
       </header>
 
       {isLoginModalOpen && (
         <div
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-black/40 backdrop-blur-md p-4 animate-fadeIn"
+          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#171A1C]/60 backdrop-blur-md p-4 animate-fadeIn"
           onClick={() => setIsLoginModalOpen(false)}
         >
           <div
-            className="bg-white rounded-2xl w-full max-w-md p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto"
+            className="bg-[#F7F4ED] rounded-2xl w-full max-w-md p-6 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto border border-[#59636B]/15"
             onClick={(e) => e.stopPropagation()}
           >
             <button
               onClick={() => setIsLoginModalOpen(false)}
-              className="absolute top-4 right-4 text-gray-400 hover:text-gray-700 p-1.5 rounded-full hover:bg-gray-100 transition-all"
+              className="absolute top-4 right-4 text-[#59636B] hover:text-[#171A1C] p-1.5 rounded-full hover:bg-[#59636B]/10 transition-all"
             >
               <X className="w-5 h-5" />
             </button>
 
             <div className="flex justify-center mb-6">
               <Image
-                src="/divine-logo.png"
+                src="/3G_Realtors_icon.png"
                 alt="Divine Bricks"
                 width={150}
                 height={45}
@@ -151,40 +206,40 @@ export default function Navbar() {
               />
             </div>
 
-            <h2 className="text-xl sm:text-2xl font-bold text-gray-900 text-center mb-6">
+            <h2 className="text-xl sm:text-2xl font-bold text-[#171A1C] text-center mb-6">
               Login into your account
             </h2>
 
             <div className="space-y-3">
-              <button className="w-full flex items-center justify-center gap-3 border border-gray-200 bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
+              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
                 <FcGoogle className="w-5 h-5" /> Login with Google
               </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-gray-200 bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
+              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
                 <FaFacebook className="w-5 h-5 text-[#1877F2]" /> Login with Facebook
               </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-gray-200 bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
+              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
                 <FaWhatsapp className="w-5 h-5 text-[#25D366]" /> Login with WhatsApp
               </button>
             </div>
 
             <div className="flex items-center gap-3 my-5">
-              <div className="flex-1 h-px bg-gray-200"></div>
-              <span className="text-gray-400 text-xs font-medium">OR</span>
-              <div className="flex-1 h-px bg-gray-200"></div>
+              <div className="flex-1 h-px bg-[#59636B]/20"></div>
+              <span className="text-[#59636B] text-xs font-medium">OR</span>
+              <div className="flex-1 h-px bg-[#59636B]/20"></div>
             </div>
 
             <div className="space-y-3">
-              <button className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] text-white font-semibold py-3 rounded-xl transition-all text-sm hover:shadow-lg hover:shadow-[#0e4b3e]/20 active:scale-[0.98]">
+              <button className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] font-bold py-3 rounded-xl transition-all text-sm hover:shadow-lg hover:shadow-[#F5A623]/30 active:scale-[0.98]">
                 <Mail className="w-5 h-5" /> Login with Email
               </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-gray-200 bg-white hover:bg-gray-50 text-gray-800 font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
+              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
                 <Link2 className="w-5 h-5" /> Login with one-time link
               </button>
             </div>
 
-            <div className="text-center text-sm mt-6 pt-5 border-t border-gray-100">
-              <span className="text-gray-600">New here? </span>
-              <button className="text-[#00d16a] font-semibold hover:underline">
+            <div className="text-center text-sm mt-6 pt-5 border-t border-[#59636B]/15">
+              <span className="text-[#59636B]">New here? </span>
+              <button className="text-[#F5A623] font-bold hover:underline">
                 Create an account
               </button>
             </div>

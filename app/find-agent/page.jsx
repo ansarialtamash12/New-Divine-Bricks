@@ -1,261 +1,25 @@
-// export default function FindAgentPage() {
-// const agents = [
-//   {
-//     name: 'Sam Bowen',
-//     serves: 'Serves in Dubai',
-//     speaks: 'Speaks English',
-//     sale: 4,
-//     rent: 16,
-//     image: 'https://randomuser.me/api/portraits/men/32.jpg',
-//     badge: '',
-//   },
-//   {
-//     name: 'Sabahuddin Khan',
-//     serves: 'Serves in Dubai',
-//     speaks: 'Speaks Urdu +3 more',
-//     sale: 4,
-//     rent: 8,
-//     image: 'https://randomuser.me/api/portraits/men/45.jpg',
-//     badge: '',
-//   },
-//   {
-//     name: 'Upma Kumar',
-//     serves: 'Serves in Dubai Marina, Jumeirah…',
-//     speaks: 'Speaks Hindi, English',
-//     sale: 14,
-//     rent: 12,
-//     image: 'https://randomuser.me/api/portraits/women/44.jpg',
-//     badge: 'bluechip',
-//   },
-//   {
-//     name: 'UDAY MANVANI PRAKA…',
-//     serves: 'Serves in Dubai',
-//     speaks: 'Speaks Sindhi, English, Urdu/Hindi',
-//     sale: 26,
-//     rent: 11,
-//     image: 'https://randomuser.me/api/portraits/men/52.jpg',
-//     badge: 'wealth',
-//   },
-//   {
-//     name: 'Blossom Fernandez',
-//     serves: 'Serves in Dubai',
-//     speaks: 'Speaks Hindi, English',
-//     sale: 2,
-//     rent: 5,
-//     image: 'https://randomuser.me/api/portraits/women/68.jpg',
-//     badge: 'range',
-//   },
-//   {
-//     name: 'Tamilia Kiria',
-//     serves: 'Serves in Dubai',
-//     speaks: 'Speaks Russian +1 more',
-//     sale: 2,
-//     rent: 19,
-//     image: 'https://randomuser.me/api/portraits/women/12.jpg',
-//     badge: 'vanguard',
-//   },
-// ];
-
-//   return (
-//     <>
-//       <main className="w-full bg-white min-h-screen">
-//         {/* Search Filter Bar */}
-//         <div className="w-full border-b border-gray-200 bg-white py-4">
-//           <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center gap-3">
-//             <select className="border border-gray-300 rounded-md px-4 py-2.5 text-sm text-gray-700 bg-white">
-//               <option>Agents</option>
-//               <option>Agencies</option>
-//             </select>
-
-//             <select className="border border-gray-300 rounded-md px-4 py-2.5 text-sm text-gray-700 bg-white">
-//               <option>Buy / Residential / Ready</option>
-//               <option>Rent / Residential</option>
-//               <option>Commercial</option>
-//             </select>
-
-//             <input
-//               type="text"
-//               placeholder="Enter location"
-//               className="border border-gray-300 rounded-md px-4 py-2.5 text-sm flex-1 min-w-[180px]"
-//             />
-
-//             <input
-//               type="text"
-//               placeholder="Agent Name"
-//               className="border border-gray-300 rounded-md px-4 py-2.5 text-sm flex-1 min-w-[180px]"
-//             />
-
-//             <input
-//               type="text"
-//               placeholder="Enter languages"
-//               className="border border-gray-300 rounded-md px-4 py-2.5 text-sm flex-1 min-w-[180px]"
-//             />
-
-//             <button className="bg-teal-800 hover:bg-teal-900 text-white font-semibold px-8 py-2.5 rounded-md text-sm">
-//               Find
-//             </button>
-//           </div>
-//         </div>
-
-//         {/* Main Content */}
-//         <div className="max-w-7xl mx-auto px-4 py-8 grid grid-cols-1 lg:grid-cols-3 gap-6">
-//           {/* Left: Agents List */}
-//           <div className="lg:col-span-2">
-//             {/* TruBroker Box */}
-//             <div className="bg-gray-100 rounded-lg p-6">
-//               <span className="inline-block bg-teal-800 text-white text-xs font-bold px-3 py-1 rounded">
-//                 TruBroker™
-//               </span>
-//               <div className="flex flex-wrap items-center justify-between mt-4 mb-6 gap-4">
-//                 <p className="text-sm text-gray-700 max-w-md">
-//                   Explore agents with a proven track record of high response
-//                   rates and authentic listings.
-//                 </p>
-//                 <div className="flex gap-0 border border-gray-300 rounded-md overflow-hidden">
-//                   <button className="px-6 py-2 text-sm font-medium bg-green-50 text-green-800">
-//                     Dubai
-//                   </button>
-//                   <button className="px-6 py-2 text-sm font-medium text-gray-600 bg-white">
-//                     Abu Dhabi
-//                   </button>
-//                 </div>
-//               </div>
-
-//               {/* Agent Cards Grid */}
-//               <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-//                 {agents.map((agent, i) => (
-//                   <div
-//                     key={i}
-//                     className="bg-white rounded-lg p-4 flex gap-4 shadow-sm hover:shadow-md transition"
-//                   >
-//                     <img
-//                       src={agent.image}
-//                       alt={agent.name}
-//                       className="w-20 h-20 rounded object-cover"
-//                     />
-//                     <div className="flex-1">
-//                       <h3 className="font-bold text-gray-900 text-base">
-//                         {agent.name}
-//                       </h3>
-//                       <p className="text-xs text-gray-600 mt-0.5">
-//                         {agent.serves}
-//                       </p>
-//                       <p className="text-xs text-gray-600">{agent.speaks}</p>
-//                       <div className="flex gap-2 mt-2">
-//                         <span className="text-xs border border-gray-300 px-2 py-0.5 rounded">
-//                           {agent.sale} SALE
-//                         </span>
-//                         <span className="text-xs border border-gray-300 px-2 py-0.5 rounded">
-//                           {agent.rent} RENT
-//                         </span>
-//                       </div>
-//                     </div>
-//                   </div>
-//                 ))}
-//               </div>
-//             </div>
-
-//             {/* View All Button */}
-//             <div className="flex justify-center mt-8">
-//               <button className="flex items-center gap-2 bg-gray-100 hover:bg-gray-200 text-teal-800 font-semibold px-6 py-3 rounded-md">
-//                 View All TruBrokers™ →
-//               </button>
-//             </div>
-//           </div>
-
-//           {/* Right: Badges Sidebar */}
-//           <div className="lg:col-span-1">
-//             <div className="text-center mb-6">
-//               <div className="text-5xl mb-2">🏅</div>
-//               <h3 className="font-bold text-lg text-gray-900">
-//                 How Do Agents Earn Badges?
-//               </h3>
-//               <p className="text-xs text-gray-600 mt-1">
-//                 To highlight great performance, we reward agents with customised
-//                 badges on Bayut.
-//               </p>
-//             </div>
-
-//             <div className="bg-gray-100 rounded-lg p-5 mb-4 text-center">
-//               <span className="inline-block bg-teal-800 text-white text-xs font-bold px-3 py-1 rounded mb-3">
-//                 TruBroker™
-//               </span>
-//               <p className="text-xs text-gray-700">
-//                 Exclusive badge awarded to agents who are highly responsive and
-//                 advertise genuine properties.
-//               </p>
-//             </div>
-
-//             <div className="bg-gray-100 rounded-lg p-5 mb-4 text-center">
-//               <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded mb-3">
-//                 💎 Quality Lister
-//               </span>
-//               <p className="text-xs text-gray-700">
-//                 Exclusive badge awarded to agents who have authentic listings.
-//               </p>
-//             </div>
-
-//             <div className="bg-gray-100 rounded-lg p-5 text-center">
-//               <span className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded mb-3">
-//                 ⚡ Responsive Broker
-//               </span>
-//               <p className="text-xs text-gray-700">
-//                 Exclusive badge awarded to agents who are highly reachable and
-//                 responsive.
-//               </p>
-//             </div>
-//           </div>
-//         </div>
-//       </main>
-//     </>
-//   );
-// }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 export default function FindAgentPage() {
-const agents = [
-  { name: 'Sam Bowen', serves: 'Serves in Dubai', speaks: 'Speaks English', sale: 4, rent: 16, image: 'https://randomuser.me/api/portraits/men/32.jpg', badge: '' },
-  { name: 'Sabahuddin Khan', serves: 'Serves in Dubai', speaks: 'Speaks Urdu +3 more', sale: 4, rent: 8, image: 'https://randomuser.me/api/portraits/men/45.jpg', badge: '' },
-  { name: 'Upma Kumar', serves: 'Serves in Dubai Marina, Jumeirah…', speaks: 'Speaks Hindi, English', sale: 14, rent: 12, image: 'https://randomuser.me/api/portraits/women/44.jpg', badge: 'bluechip' },
-  { name: 'UDAY MANVANI PRAKA…', serves: 'Serves in Dubai', speaks: 'Speaks Sindhi, English, Urdu/Hindi', sale: 26, rent: 11, image: 'https://randomuser.me/api/portraits/men/52.jpg', badge: 'wealth' },
-  { name: 'Blossom Fernandez', serves: 'Serves in Dubai', speaks: 'Speaks Hindi, English', sale: 2, rent: 5, image: 'https://randomuser.me/api/portraits/women/68.jpg', badge: 'range' },
-  { name: 'Tamilia Kiria', serves: 'Serves in Dubai', speaks: 'Speaks Russian +1 more', sale: 2, rent: 19, image: 'https://randomuser.me/api/portraits/women/12.jpg', badge: 'vanguard' },
-];
+  const agents = [
+    { name: 'Rajesh Sharma', serves: 'Serves in Mumbai', speaks: 'Speaks Hindi, English', sale: 4, rent: 16, image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200', badge: '' },
+    { name: 'Sabahuddin Khan', serves: 'Serves in Mumbai', speaks: 'Speaks Urdu +3 more', sale: 4, rent: 8, image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200', badge: '' },
+    { name: 'Upma Kumar', serves: 'Serves in Bandra West, Juhu…', speaks: 'Speaks Hindi, Marathi, English', sale: 14, rent: 12, image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200', badge: 'bluechip' },
+    { name: 'Uday Manvani Prakash', serves: 'Serves in Mumbai', speaks: 'Speaks Sindhi, Hindi, Gujarati, English', sale: 26, rent: 11, image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200', badge: 'wealth' },
+    { name: 'Blossom Fernandez', serves: 'Serves in Mumbai', speaks: 'Speaks Hindi, English, Konkani', sale: 2, rent: 5, image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200', badge: 'range' },
+    { name: 'Tamilia Kiria', serves: 'Serves in Mumbai', speaks: 'Speaks Tamil +1 more', sale: 2, rent: 19, image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200', badge: 'vanguard' },
+  ];
 
   return (
     <>
-      <main className="w-full bg-white min-h-screen">
+      <main className="w-full bg-[#F7F4ED] min-h-screen">
         {/* Search Filter Bar */}
-        <div className="w-full border-b border-gray-100 bg-white py-5">
+        <div className="w-full border-b border-[#59636B]/15 bg-[#F7F4ED] py-5">
           <div className="max-w-7xl mx-auto px-4 flex flex-wrap items-center gap-3">
-            <select className="border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-[#00d16a]/30 focus:border-[#00d16a] transition-all">
+            <select className="border border-[#59636B]/20 rounded-xl px-4 py-2.5 text-sm text-[#171A1C] bg-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all">
               <option>Agents</option>
               <option>Agencies</option>
             </select>
 
-            <select className="border border-gray-200 rounded-xl px-4 py-2.5 text-sm text-gray-700 bg-white focus:outline-none focus:ring-2 focus:ring-[#00d16a]/30 focus:border-[#00d16a] transition-all">
+            <select className="border border-[#59636B]/20 rounded-xl px-4 py-2.5 text-sm text-[#171A1C] bg-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all">
               <option>Buy / Residential / Ready</option>
               <option>Rent / Residential</option>
               <option>Commercial</option>
@@ -263,23 +27,23 @@ const agents = [
 
             <input
               type="text"
-              placeholder="Enter location"
-              className="border border-gray-200 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] focus:outline-none focus:ring-2 focus:ring-[#00d16a]/30 focus:border-[#00d16a] transition-all"
+              placeholder="Enter locality or city"
+              className="border border-[#59636B]/20 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] text-[#171A1C] placeholder-[#59636B]/70 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
             />
 
             <input
               type="text"
               placeholder="Agent Name"
-              className="border border-gray-200 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] focus:outline-none focus:ring-2 focus:ring-[#00d16a]/30 focus:border-[#00d16a] transition-all"
+              className="border border-[#59636B]/20 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] text-[#171A1C] placeholder-[#59636B]/70 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
             />
 
             <input
               type="text"
               placeholder="Enter languages"
-              className="border border-gray-200 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] focus:outline-none focus:ring-2 focus:ring-[#00d16a]/30 focus:border-[#00d16a] transition-all"
+              className="border border-[#59636B]/20 rounded-xl px-4 py-2.5 text-sm flex-1 min-w-[180px] text-[#171A1C] placeholder-[#59636B]/70 bg-white focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
             />
 
-            <button className="bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] hover:shadow-lg hover:shadow-[#0e4b3e]/30 text-white font-semibold px-8 py-2.5 rounded-xl text-sm transition-all duration-200 active:scale-95">
+            <button className="bg-gradient-to-r from-[#F5A623] to-[#E09400] hover:shadow-lg hover:shadow-[#F5A623]/30 text-[#171A1C] font-bold px-8 py-2.5 rounded-xl text-sm transition-all duration-200 active:scale-95">
               Find
             </button>
           </div>
@@ -290,21 +54,21 @@ const agents = [
           {/* Left: Agents List */}
           <div className="lg:col-span-2">
             {/* TruBroker Box */}
-            <div className="bg-gray-50 border border-gray-100 rounded-3xl p-6">
-              <span className="inline-block bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] text-white text-xs font-bold px-3 py-1.5 rounded-full tracking-wide">
+            <div className="bg-white border border-[#59636B]/15 rounded-3xl p-6">
+              <span className="inline-block bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] text-xs font-bold px-3 py-1.5 rounded-full tracking-wide">
                 TruBroker™
               </span>
               <div className="flex flex-wrap items-center justify-between mt-5 mb-6 gap-4">
-                <p className="text-sm text-gray-600 max-w-md">
+                <p className="text-sm text-[#59636B] max-w-md">
                   Explore agents with a proven track record of high response
                   rates and authentic listings.
                 </p>
-                <div className="flex gap-0 border border-gray-200 rounded-xl overflow-hidden shadow-sm">
-                  <button className="px-6 py-2 text-sm font-semibold bg-[#ecfdf5] text-[#0e4b3e] transition-colors">
-                    Dubai
+                <div className="flex gap-0 border border-[#59636B]/20 rounded-xl overflow-hidden shadow-sm">
+                  <button className="px-6 py-2 text-sm font-semibold bg-[#171A1C] text-[#F5A623] transition-colors">
+                    Mumbai
                   </button>
-                  <button className="px-6 py-2 text-sm font-medium text-gray-500 bg-white hover:text-[#0e4b3e] transition-colors">
-                    Abu Dhabi
+                  <button className="px-6 py-2 text-sm font-medium text-[#59636B] bg-white hover:text-[#F5A623] transition-colors">
+                    Delhi NCR
                   </button>
                 </div>
               </div>
@@ -314,26 +78,26 @@ const agents = [
                 {agents.map((agent, i) => (
                   <div
                     key={i}
-                    className="bg-white rounded-2xl p-4 flex gap-4 border border-gray-100 shadow-md shadow-gray-200/50 hover:shadow-xl hover:-translate-y-0.5 transition-all duration-300"
+                    className="bg-[#F7F4ED] rounded-2xl p-4 flex gap-4 border border-[#59636B]/15 shadow-md shadow-[#171A1C]/5 hover:shadow-xl hover:shadow-[#F5A623]/10 hover:-translate-y-0.5 hover:border-[#F5A623]/30 transition-all duration-300"
                   >
                     <img
                       src={agent.image}
                       alt={agent.name}
-                      className="w-20 h-20 rounded-xl object-cover"
+                      className="w-20 h-20 rounded-xl object-cover ring-2 ring-[#F5A623]/20"
                     />
                     <div className="flex-1">
-                      <h3 className="font-bold text-gray-900 text-base tracking-tight">
+                      <h3 className="font-bold text-[#171A1C] text-base tracking-tight">
                         {agent.name}
                       </h3>
-                      <p className="text-xs text-gray-500 mt-0.5">
+                      <p className="text-xs text-[#59636B] mt-0.5">
                         {agent.serves}
                       </p>
-                      <p className="text-xs text-gray-500">{agent.speaks}</p>
+                      <p className="text-xs text-[#59636B]">{agent.speaks}</p>
                       <div className="flex gap-2 mt-2">
-                        <span className="text-xs border border-[#a7f3d0] text-[#0e4b3e] bg-[#ecfdf5] px-2 py-0.5 rounded-lg font-semibold">
+                        <span className="text-xs border border-[#F5A623]/30 text-[#F5A623] bg-[#F5A623]/10 px-2 py-0.5 rounded-lg font-bold">
                           {agent.sale} SALE
                         </span>
-                        <span className="text-xs border border-[#a7f3d0] text-[#0e4b3e] bg-[#ecfdf5] px-2 py-0.5 rounded-lg font-semibold">
+                        <span className="text-xs border border-[#F5A623]/30 text-[#F5A623] bg-[#F5A623]/10 px-2 py-0.5 rounded-lg font-bold">
                           {agent.rent} RENT
                         </span>
                       </div>
@@ -345,7 +109,7 @@ const agents = [
 
             {/* View All Button */}
             <div className="flex justify-center mt-8">
-              <button className="flex items-center gap-2 bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] hover:shadow-lg hover:shadow-[#0e4b3e]/30 text-white font-semibold px-6 py-3 rounded-xl transition-all duration-200 active:scale-95">
+              <button className="flex items-center gap-2 bg-gradient-to-r from-[#F5A623] to-[#E09400] hover:shadow-lg hover:shadow-[#F5A623]/30 text-[#171A1C] font-bold px-6 py-3 rounded-xl transition-all duration-200 active:scale-95">
                 View All TruBrokers™ →
               </button>
             </div>
@@ -355,39 +119,39 @@ const agents = [
           <div className="lg:col-span-1">
             <div className="text-center mb-6">
               <div className="text-5xl mb-3">🏅</div>
-              <h3 className="font-bold text-lg text-gray-900 tracking-tight">
+              <h3 className="font-bold text-lg text-[#171A1C] tracking-tight">
                 How Do Agents Earn Badges?
               </h3>
-              <p className="text-xs text-gray-500 mt-2">
+              <p className="text-xs text-[#59636B] mt-2">
                 To highlight great performance, we reward agents with customised
-                badges on Bayut.
+                badges on Divine Bricks.
               </p>
             </div>
 
-            <div className="bg-gray-50 border border-gray-100 rounded-2xl p-5 mb-4 text-center shadow-md shadow-gray-200/50">
-              <span className="inline-block bg-gradient-to-r from-[#0e4b3e] to-[#0a3d30] text-white text-xs font-bold px-3 py-1 rounded-full mb-3">
+            <div className="bg-white border border-[#59636B]/15 rounded-2xl p-5 mb-4 text-center shadow-md shadow-[#171A1C]/5">
+              <span className="inline-block bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] text-xs font-bold px-3 py-1 rounded-full mb-3">
                 TruBroker™
               </span>
-              <p className="text-xs text-gray-600">
+              <p className="text-xs text-[#59636B]">
                 Exclusive badge awarded to agents who are highly responsive and
                 advertise genuine properties.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-blue-50 to-white border border-blue-100 rounded-2xl p-5 mb-4 text-center shadow-md shadow-blue-100/50">
-              <span className="inline-block bg-blue-100 text-blue-700 text-xs font-bold px-3 py-1 rounded-full mb-3">
+            <div className="bg-gradient-to-br from-[#171A1C]/5 to-white border border-[#171A1C]/15 rounded-2xl p-5 mb-4 text-center shadow-md shadow-[#171A1C]/5">
+              <span className="inline-block bg-[#171A1C]/10 text-[#171A1C] text-xs font-bold px-3 py-1 rounded-full mb-3">
                 💎 Quality Lister
               </span>
-              <p className="text-xs text-gray-600">
+              <p className="text-xs text-[#59636B]">
                 Exclusive badge awarded to agents who have authentic listings.
               </p>
             </div>
 
-            <div className="bg-gradient-to-br from-pink-50 to-white border border-pink-100 rounded-2xl p-5 text-center shadow-md shadow-pink-100/50">
-              <span className="inline-block bg-pink-100 text-pink-700 text-xs font-bold px-3 py-1 rounded-full mb-3">
+            <div className="bg-gradient-to-br from-[#F5A623]/10 to-white border border-[#F5A623]/25 rounded-2xl p-5 text-center shadow-md shadow-[#F5A623]/10">
+              <span className="inline-block bg-[#F5A623]/15 text-[#F5A623] text-xs font-bold px-3 py-1 rounded-full mb-3">
                 ⚡ Responsive Broker
               </span>
-              <p className="text-xs text-gray-600">
+              <p className="text-xs text-[#59636B]">
                 Exclusive badge awarded to agents who are highly reachable and
                 responsive.
               </p>
