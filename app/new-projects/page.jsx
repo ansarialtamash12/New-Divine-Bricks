@@ -8,17 +8,9 @@ import {
   Heart, CheckCircle2, Star, ArrowRight
 } from 'lucide-react';
 import RegisterInterestModal from '@/app/components/RegisterInterestModal';
+import { properties } from '@/app/data/properties';
 
-const newProjects = [
-  { id: 1, title: 'Lodha Amara', location: 'Thane West, Mumbai', price: '₹65,80,000', beds: '1-3 BHK', handover: 'Q3 2026', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 2, title: 'Godrej Woods', location: 'Sector 43, Noida', price: '₹95,00,000', beds: '2-4 BHK', handover: 'Q2 2027', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1512917774080-9991f1c4c750?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 3, title: 'Prestige Lakeside', location: 'Whitefield, Bangalore', price: '₹1,20,00,000', beds: '2-4 BHK', handover: 'Q4 2026', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 4, title: 'DLF The Crest', location: 'Golf Course Road, Gurgaon', price: '₹1,10,00,000', beds: '3-4 BHK', handover: 'Q1 2027', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 5, title: 'Sobha Dream Acres', location: 'Panathur Road, Bangalore', price: '₹1,45,00,000', beds: '1-3 BHK', handover: 'Q4 2026', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1567496898669-ee935f5f647a?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 6, title: 'Lodha Palava', location: 'Dombivli, Mumbai', price: '₹95,00,000', beds: '1 RK - 3 BHK', handover: 'Q2 2027', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 7, title: 'My Home Avatar', location: 'Narsingi, Hyderabad', price: '₹1,30,00,000', beds: '2-3 BHK', handover: 'Q3 2027', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-  { id: 8, title: 'Emaar Urban Oasis', location: 'Sector 62, Gurgaon', price: '₹1,80,00,000', beds: '2-4 BHK', handover: 'Q1 2028', status: 'Under Construction', image: 'https://images.unsplash.com/photo-1600585154340-be6161a56a0c?auto=format&fit=crop&q=80&w=600&h=400', agent: 'Divine Realtors' },
-];
+const tabs = ['Mumbai', 'Delhi NCR', 'Bangalore', 'Hyderabad', 'Pune', 'Jaipur'];
 
 export default function NewProjectsPage() {
   const [activeTab, setActiveTab] = useState('Mumbai');
@@ -36,6 +28,9 @@ export default function NewProjectsPage() {
     setIsModalOpen(false);
     setSelectedProject(null);
   };
+
+  // Filter properties by selected city tab
+  const filteredProjects = properties.filter((p) => p.city === activeTab);
 
   return (
     <>
@@ -59,7 +54,7 @@ export default function NewProjectsPage() {
               {/* Tabs — horizontal scroll on mobile */}
               <div className="w-full lg:w-auto -mx-4 lg:mx-0 px-4 lg:px-0 overflow-x-auto scrollbar-hide">
                 <div className="flex gap-2 bg-[#F7F4ED] p-1 rounded-lg w-max">
-                  {['Mumbai', 'Delhi NCR', 'Bangalore', 'Hyderabad', 'Pune'].map((tab) => (
+                  {tabs.map((tab) => (
                     <button
                       key={tab}
                       onClick={() => setActiveTab(tab)}
@@ -97,35 +92,61 @@ export default function NewProjectsPage() {
                     <ChevronDown className="absolute right-2 top-2 w-4 h-4 text-[#59636B] pointer-events-none" />
                   </div>
                 </div>
-                <p className="text-xs sm:text-sm text-[#59636B]">Showing 1-8 of 250</p>
+                <p className="text-xs sm:text-sm text-[#59636B]">
+                  Showing 1-{filteredProjects.length} of {properties.length}
+                </p>
               </div>
 
+              {/* Empty State */}
+              {filteredProjects.length === 0 && (
+                <div className="bg-white rounded-xl border border-[#59636B]/15 p-10 text-center">
+                  <Building2 className="w-12 h-12 text-[#59636B]/40 mx-auto mb-4" />
+                  <p className="text-[#59636B] font-medium">
+                    No projects available in {activeTab}.
+                  </p>
+                  <button
+                    onClick={() => setActiveTab('Mumbai')}
+                    className="mt-4 text-[#F5A623] font-bold hover:underline"
+                  >
+                    Show Mumbai projects
+                  </button>
+                </div>
+              )}
+
               {/* Property Cards List */}
-              {newProjects.map((project) => (
+              {filteredProjects.map((project) => (
                 <div key={project.id} className="bg-white rounded-xl border border-[#59636B]/15 shadow-sm hover:shadow-lg hover:shadow-[#F5A623]/10 hover:border-[#F5A623]/30 transition-all overflow-hidden flex flex-col md:flex-row">
                   
-                  {/* Image Section */}
-                  <div className="relative w-full md:w-64 lg:w-72 h-48 md:h-auto md:min-h-[200px] bg-[#59636B]/10 flex-shrink-0">
+                  {/* Image Section — Clickable */}
+                  <Link
+                    href={`/property/${project.id}`}
+                    className="relative w-full md:w-64 lg:w-72 h-48 md:h-auto md:min-h-[200px] bg-[#59636B]/10 flex-shrink-0 block"
+                  >
                     <img
-                      src={project.image}
+                      src={project.images?.[0]}
                       alt={project.title}
-                      className="absolute inset-0 w-full h-full object-cover"
+                      className="absolute inset-0 w-full h-full object-cover hover:opacity-95 transition-opacity"
                     />
                     {/* Status Badge */}
                     <div className="absolute top-3 left-3 bg-[#F5A623] text-[#171A1C] text-[10px] font-bold px-2 py-1 rounded">
                       {project.status}
                     </div>
                     {/* Heart Icon */}
-                    <button className="absolute top-3 right-3 p-1.5 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all">
+                    <button
+                      onClick={(e) => e.preventDefault()}
+                      className="absolute top-3 right-3 p-1.5 bg-white/90 backdrop-blur-sm rounded-full hover:bg-white hover:scale-110 transition-all"
+                    >
                       <Heart className="w-4 h-4 text-[#59636B] hover:text-[#F5A623] transition-colors" />
                     </button>
-                  </div>
+                  </Link>
 
                   {/* Content Section */}
                   <div className="p-4 sm:p-5 flex-1 flex flex-col justify-between">
                     <div>
                       <div className="flex flex-wrap justify-between items-start gap-2 mb-2">
-                        <h2 className="text-lg sm:text-xl font-bold text-[#171A1C] tracking-tight">{project.title}</h2>
+                        <h2 className="text-lg sm:text-xl font-bold text-[#171A1C] tracking-tight">
+                          {project.title}
+                        </h2>
                         <span className="text-[10px] sm:text-xs bg-[#F5A623]/10 text-[#F5A623] px-2 py-1 rounded flex items-center gap-1 font-semibold whitespace-nowrap">
                           <Star className="w-3 h-3" /> Featured
                         </span>
@@ -136,23 +157,31 @@ export default function NewProjectsPage() {
                       </p>
 
                       <div className="flex flex-wrap gap-3 sm:gap-4 text-xs sm:text-sm text-[#59636B] mb-4">
-                        <span className="flex items-center gap-1"><Bed className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F5A623]" /> {project.beds}</span>
-                        <span className="flex items-center gap-1"><Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F5A623]" /> {project.handover}</span>
+                        <span className="flex items-center gap-1">
+                          <Bed className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F5A623]" /> {project.beds}
+                        </span>
+                        <span className="flex items-center gap-1">
+                          <Calendar className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-[#F5A623]" /> {project.handover}
+                        </span>
                       </div>
                     </div>
 
                     <div className="flex justify-between items-end border-t border-[#59636B]/15 pt-3 sm:pt-4">
                       <div>
                         <p className="text-[10px] sm:text-xs text-[#59636B]">Starting from</p>
-                        <p className="text-base sm:text-lg font-bold text-[#F5A623]">{project.price}</p>
+                        <p className="text-base sm:text-lg font-bold text-[#F5A623] line-clamp-1">
+                          {project.price}
+                        </p>
                       </div>
                       <div className="text-right">
                         <p className="text-[10px] sm:text-xs text-[#59636B]">Agent</p>
-                        <p className="text-xs sm:text-sm font-medium text-[#171A1C]">{project.agent}</p>
+                        <p className="text-xs sm:text-sm font-medium text-[#171A1C]">
+                          {project.agent?.company || 'Divine Realtors'}
+                        </p>
                       </div>
                     </div>
 
-                    {/* ✅ Mobile CTA — visible only on mobile/tablet */}
+                    {/* ✅ Mobile CTA */}
                     <div className="flex md:hidden gap-2 mt-4">
                       <button
                         onClick={() => openModal(project)}
@@ -160,13 +189,16 @@ export default function NewProjectsPage() {
                       >
                         Register Interest
                       </button>
-                      <button className="flex-1 border border-[#F5A623] text-[#F5A623] text-xs font-bold py-2.5 rounded-lg hover:bg-[#F5A623]/10 transition-colors">
+                      <Link
+                        href={`/property/${project.id}`}
+                        className="flex-1 border border-[#F5A623] text-[#F5A623] text-xs font-bold py-2.5 rounded-lg hover:bg-[#F5A623]/10 transition-colors text-center"
+                      >
                         View Details
-                      </button>
+                      </Link>
                     </div>
                   </div>
 
-                  {/* Desktop CTA — visible only on desktop */}
+                  {/* ✅ Desktop CTA */}
                   <div className="hidden md:flex flex-col justify-center p-4 border-l border-[#59636B]/15 bg-[#F7F4ED] w-40">
                     <button
                       onClick={() => openModal(project)}
@@ -174,20 +206,27 @@ export default function NewProjectsPage() {
                     >
                       Register Interest
                     </button>
-                    <button className="w-full border border-[#F5A623] text-[#F5A623] text-sm font-bold py-2.5 rounded-lg hover:bg-[#F5A623]/10 transition-colors">
+                    <Link
+                      href={`/property/${project.id}`}
+                      className="w-full border border-[#F5A623] text-[#F5A623] text-sm font-bold py-2.5 rounded-lg hover:bg-[#F5A623]/10 transition-colors text-center"
+                    >
                       View Details
-                    </button>
+                    </Link>
                   </div>
                 </div>
               ))}
 
               {/* Pagination */}
-              <div className="flex justify-center gap-2 mt-6 sm:mt-8">
-                <button className="w-9 h-9 rounded border border-[#F5A623] flex items-center justify-center text-sm text-[#171A1C] font-semibold bg-[#F5A623]">1</button>
-                <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all">2</button>
-                <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all">3</button>
-                <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all"><ArrowRight className="w-4 h-4" /></button>
-              </div>
+              {filteredProjects.length > 0 && (
+                <div className="flex justify-center gap-2 mt-6 sm:mt-8">
+                  <button className="w-9 h-9 rounded border border-[#F5A623] flex items-center justify-center text-sm text-[#171A1C] font-semibold bg-[#F5A623]">1</button>
+                  <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all">2</button>
+                  <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all">3</button>
+                  <button className="w-9 h-9 rounded border border-[#59636B]/20 flex items-center justify-center text-sm text-[#171A1C] hover:bg-[#F5A623]/10 hover:border-[#F5A623]/50 transition-all">
+                    <ArrowRight className="w-4 h-4" />
+                  </button>
+                </div>
+              )}
             </div>
 
             {/* ===== RIGHT SIDE: FILTERS SIDEBAR ===== */}
