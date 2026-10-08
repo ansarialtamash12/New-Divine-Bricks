@@ -198,7 +198,7 @@ export default function Navbar() {
 
             <div className="flex justify-center mb-6">
               <Image
-                src="/3G_Realtors_icon.png"
+                    src="/3G_Realtors_Icon.png"
                 alt="Divine Bricks"
                 width={150}
                 height={45}
