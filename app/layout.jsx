@@ -11,15 +11,15 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Divine Bricks | Find your place in Dubai",
+  title: "Divine Bricks | Find your place in India",
   description:
-    "Explore homes for sale and rent across Dubai with Divine Bricks.",
+    "Explore homes for sale and rent across India with Divine Bricks.",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${inter.variable} h-full`}>
-      <body className="min-h-screen flex flex-col w-full overflow-x-hidden bg-white text-gray-900">
+      <body className="min-h-screen flex flex-col w-full bg-white text-gray-900">
         <Navbar />
 
         <main className="flex-1 w-full flex flex-col">{children}</main>

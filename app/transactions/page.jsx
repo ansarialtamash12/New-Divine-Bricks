@@ -35,7 +35,7 @@ export default function IndiaTransactionsPage() {
     <div className="w-full bg-[#F7F4ED] flex flex-col font-sans min-h-screen">
       
       {/* NAVBAR */}
-      <nav className="w-full bg-white/90 backdrop-blur-xl border-b border-[#59636B]/15 sticky top-0 z-50">
+      {/* <nav className="w-full bg-white/90 backdrop-blur-xl border-b border-[#59636B]/15 sticky top-0 z-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex justify-between items-center h-16">
             <Link href="/" className="text-xl font-bold text-[#F5A623]">
@@ -51,7 +51,7 @@ export default function IndiaTransactionsPage() {
             <button className="text-sm font-bold text-[#171A1C] hover:text-[#F5A623] transition-colors">Sign up or Log in</button>
           </div>
         </div>
-      </nav>
+      </nav> */}
 
       {/* FILTER BAR */}
       <div className="w-full bg-white border-b border-[#59636B]/15 py-4 shadow-sm">
