@@ -59,7 +59,7 @@ export default function Navbar() {
                   }`}
                 >
                   <Image
-                    src="/3G_Realtors_icon.png"
+                    src="/3G_Realtors_Icon.png"
                     alt="Divine Logo"
                     width={120}
                     height={40}
