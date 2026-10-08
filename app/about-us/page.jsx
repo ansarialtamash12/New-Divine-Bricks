@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import Image from 'next/image';
 import {
   Home,
   CheckSquare,
@@ -17,9 +16,9 @@ export default function AboutUsPage() {
   const [activeFeatureTab, setActiveFeatureTab] = useState('TruBroker™');
   const [heroIndex, setHeroIndex] = useState(0);
 
-  // ===== HERO CAROUSEL — Unsplash images =====
+  // ===== HERO CAROUSEL — Indian property images =====
   const heroImages = [
-    'https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&w=1920&q=80', // Dubai skyline
+    'https://images.unsplash.com/photo-1599661046289-e31897846e41?auto=format&fit=crop&w=1920&q=80', // Indian architecture
     'https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1920&q=80', // Modern building
     'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1920&q=80', // Luxury interior
     'https://images.unsplash.com/photo-1497366754035-f200968a6e72?auto=format&fit=crop&w=1920&q=80', // Office team
@@ -37,7 +36,7 @@ export default function AboutUsPage() {
     'TruBroker™ Stories',
     'TruCheck™',
     'TruEstimate™',
-    'Dubai Transactions',
+    'India Transactions',
     'DivineGPT',
   ];
 
@@ -45,35 +44,35 @@ export default function AboutUsPage() {
     {
       Icon: Home,
       title: 'Comprehensive Listings',
-      desc: 'Explore a vast database of residential and commercial properties including apartments, villas, offices and more.',
+      desc: 'Explore a vast database of residential and commercial properties including apartments, villas, offices and more across India.',
     },
     {
       Icon: CheckSquare,
       title: 'Advanced Tools',
-      desc: 'Our cutting-edge products such as TruCheck™, TruBroker™, TruEstimate™, DivineGPT, Dubai Transactions and more help you find properties quickly and easily.',
+      desc: 'Our cutting-edge products such as TruCheck™, TruBroker™, TruEstimate™, DivineGPT, India Transactions and more help you find properties quickly and easily.',
     },
     {
       Icon: BarChart3,
       title: 'Market Insights',
-      desc: 'With data directly from the Dubai Land Department (DLD), use Dubai Transactions to monitor transaction data for the rental and sales markets.',
+      desc: 'With data directly from RERA and leading developers, use India Transactions to monitor transaction data for the rental and sales markets across major Indian cities.',
     },
     {
       Icon: Headphones,
       title: 'Expert Support',
-      desc: 'Our team of experienced real estate professionals is always on hand to provide guidance and support throughout your property journey.',
+      desc: 'Our team of experienced real estate professionals is always on hand to provide guidance and support throughout your property journey in India.',
     },
     {
       Icon: GraduationCap,
       title: 'Divine Bricks Academy',
-      desc: 'This is our bespoke training academy for real estate professionals in the UAE. You can join any of these specialised courses for free.',
+      desc: 'This is our bespoke training academy for real estate professionals in India. You can join any of these specialised courses for free.',
     },
   ];
 
   const contentResources = [
-    { title: 'myDivine Bricks', desc: "The UAE's beloved property and lifestyle blog" },
-    { title: 'عقارات ديفاين', desc: 'The first and most popular Arabic real estate blog in the entire region' },
-    { title: 'BUILDING GUIDES', desc: 'Explore 6500+ commercial and residential buildings' },
-    { title: 'AREA GUIDES', desc: 'Learn about 3000+ areas and communities' },
+    { title: 'myDivine Bricks', desc: "India's beloved property and lifestyle blog" },
+    { title: 'हिंदी ब्लॉग', desc: 'The most popular Hindi real estate blog in the country' },
+    { title: 'BUILDING GUIDES', desc: 'Explore 6500+ commercial and residential buildings across India' },
+    { title: 'AREA GUIDES', desc: 'Learn about 3000+ localities and communities' },
     { title: 'SCHOOL GUIDES', desc: 'Discover 1000+ educational institutions' },
   ];
 
@@ -89,13 +88,10 @@ export default function AboutUsPage() {
               heroIndex === i ? 'opacity-100' : 'opacity-0'
             }`}
           >
-            <Image
+            <img
               src={src}
               alt={`Divine Bricks ${i + 1}`}
-              fill
-              className="object-cover"
-              priority={i === 0}
-              unoptimized
+              className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
         ))}
@@ -163,13 +159,13 @@ export default function AboutUsPage() {
                 About Us
               </h2>
               <h3 className="text-xl md:text-2xl font-bold mb-4 tracking-tight" style={{ color: '#171A1C' }}>
-                Real Homes Live Here – The UAE's Most Trusted Property Search Experience
+                Real Homes Live Here – India's Most Trusted Property Search Experience
               </h3>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                Welcome to Divine Bricks, the UAE's premier real estate portal known for featuring the most authentic property listings in Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, Umm Al Quwain and Fujairah. Whether you're looking to buy, rent or sell property, Divine Bricks is here to guide you through every step of your journey, making your real estate journey as seamless and effortless as possible.
+                Welcome to Divine Bricks, India's premier real estate portal known for featuring the most authentic property listings in Mumbai, Delhi NCR, Bangalore, Hyderabad, Pune, Jaipur, Ahmedabad, Chennai, Kolkata and more. Whether you're looking to buy, rent or sell property, Divine Bricks is here to guide you through every step of your journey, making your real estate journey as seamless and effortless as possible.
               </p>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                A part of Divine Group Holdings Limited, the only homegrown Unicorn in the Arabian region, Divine Bricks connects buyers, sellers, tenants and brokers by providing a safe and user-friendly environment.
+                A part of Divine Group Holdings Limited, one of India's fastest-growing proptech companies, Divine Bricks connects buyers, sellers, tenants and brokers by providing a safe and user-friendly environment.
               </p>
               <Link
                 href="#"
@@ -180,19 +176,17 @@ export default function AboutUsPage() {
               </Link>
             </div>
 
-            {/* Map Visual — Unsplash map image */}
+            {/* Map Visual — India map */}
             <div className="relative">
               <div className="w-full aspect-[4/3] relative rounded-2xl overflow-hidden shadow-lg">
-                <Image
+                <img
                   src="https://images.unsplash.com/photo-1524661135-423995f22d0b?auto=format&fit=crop&w=1200&q=80"
-                  alt="World Map"
-                  fill
-                  className="object-cover"
-                  unoptimized
+                  alt="India Map"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-br from-[#F5A623]/10 to-transparent" />
-                {/* UAE Pin highlight */}
-                <div className="absolute top-[45%] left-[58%] -translate-x-1/2 -translate-y-1/2">
+                {/* India Pin highlight */}
+                <div className="absolute top-[48%] left-[68%] -translate-x-1/2 -translate-y-1/2">
                   <div className="w-6 h-6 bg-[#F5A623] rounded-full animate-pulse shadow-lg border-4 border-white" />
                 </div>
               </div>
@@ -257,7 +251,7 @@ export default function AboutUsPage() {
           </div>
 
           <p className="text-sm leading-relaxed mt-12 max-w-4xl" style={{ color: '#59636B' }}>
-            At Divine Bricks, we are committed to ensuring a high level of transparency, accuracy and trust in the real estate market. We work closely with top real estate agencies and developers to provide authentic and available listings and reliable information. Our dedication to quality and integrity has earned us the trust of millions of users and a reputation as a market leader.
+            At Divine Bricks, we are committed to ensuring a high level of transparency, accuracy and trust in the real estate market. We work closely with top real estate agencies and developers across India to provide authentic and available listings and reliable information. Our dedication to quality and integrity has earned us the trust of millions of users and a reputation as a market leader.
           </p>
         </div>
       </section>
@@ -271,18 +265,18 @@ export default function AboutUsPage() {
                 Our Investors
               </h2>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: '#59636B' }}>
-                Divine Group, Divine Bricks' parent company, is among the most well-funded startups in the Middle East. It is backed by some of the biggest names in the industry including Acacia Partners, Prosus, KCK Group and Exor, fortifying our position in the global classifieds industry.
+                Divine Group, Divine Bricks' parent company, is among the most well-funded proptech startups in India. It is backed by some of the biggest names in the industry including Sequoia Capital, Accel Partners, Prosus Ventures and Nexus Venture Partners, fortifying our position in the global classifieds industry.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
               <div className="flex items-center justify-center h-20">
-                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#4B6EF5' }}>prosus</span>
+                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#4B6EF5' }}>Prosus</span>
               </div>
               <div className="flex items-center justify-center h-20">
-                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#1E40AF' }}>Exor</span>
+                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#1E40AF' }}>Sequoia</span>
               </div>
               <div className="flex items-center justify-center h-20">
-                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#171A1C' }}>KCK</span>
+                <span className="text-2xl md:text-3xl font-bold" style={{ color: '#171A1C' }}>Accel</span>
               </div>
             </div>
           </div>
@@ -301,32 +295,30 @@ export default function AboutUsPage() {
                   boxShadow: '0 20px 50px -10px rgba(23, 26, 28, 0.2)',
                 }}
               >
-                <Image
+                <img
                   src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=800&q=80"
-                  alt="Haider Ali Khan"
-                  fill
-                  className="object-cover"
-                  unoptimized
+                  alt="Aarav Mehta"
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             </div>
 
             <div className="lg:col-span-3">
               <h2 className="text-3xl md:text-4xl font-bold mb-2 tracking-tight" style={{ color: '#171A1C' }}>
-                Meet Haider Ali Khan
+                Meet Aarav Mehta
               </h2>
               <p className="font-semibold mb-6 text-sm" style={{ color: '#F5A623' }}>
-                CEO Divine Bricks & Divine Group MENA
+                CEO Divine Bricks & Divine Group India
               </p>
 
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                Haider Ali Khan moved to the UAE from the USA in 2014 as the Chief Executive Officer of Divine Bricks, bringing over fifteen years of experience leading large-scale tech organisations. His guidance and technological innovations have been instrumental in the growth and expansion of Divine Bricks across the region and have earned the company its regional powerhouse status.
+                Aarav Mehta moved to Mumbai from Silicon Valley in 2014 as the Chief Executive Officer of Divine Bricks, bringing over fifteen years of experience leading large-scale tech organisations. His guidance and technological innovations have been instrumental in the growth and expansion of Divine Bricks across India and have earned the company its national powerhouse status.
               </p>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
                 Under his leadership, Divine Bricks has experienced great success with record-breaking revenue and significant year-on-year client growth.
               </p>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: '#59636B' }}>
-                Haider also leads the UAE's largest online classifieds website, Divine Bricks. He has also taken over as CEO of the MENA arm of Divine Group Holdings Limited. Haider also serves on the Board of Director of the Dubai Chamber of Digital Economy.
+                Aarav also leads India's largest online classifieds website, Divine Bricks. He has also taken over as CEO of the India arm of Divine Group Holdings Limited. Aarav also serves on the Board of Directors of NASSCOM.
               </p>
             </div>
           </div>
@@ -340,7 +332,7 @@ export default function AboutUsPage() {
             Our Values
           </h2>
           <p className="text-sm md:text-base leading-relaxed max-w-4xl mb-10" style={{ color: '#59636B' }}>
-            As a homegrown UAE brand, we empower property seekers and agents with accurate data and exceptional tools to transform the property market to be more transparent and efficient, making it easy for everyone to find their Real Home. We live by our values of Honesty, Innovation and Ownership and every decision we make is aimed to elevate the market and support the growth of the region.
+            As a homegrown Indian brand, we empower property seekers and agents with accurate data and exceptional tools to transform the property market to be more transparent and efficient, making it easy for everyone to find their Real Home. We live by our values of Honesty, Innovation and Ownership and every decision we make is aimed to elevate the market and support the growth of the nation.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -357,12 +349,10 @@ export default function AboutUsPage() {
                   boxShadow: '0 8px 24px rgba(23, 26, 28, 0.08)',
                 }}
               >
-                <Image
+                <img
                   src={img}
                   alt={`Our Values ${i + 1}`}
-                  fill
-                  className="object-cover"
-                  unoptimized
+                  className="absolute inset-0 w-full h-full object-cover"
                 />
               </div>
             ))}
@@ -431,7 +421,7 @@ export default function AboutUsPage() {
                 {activeFeatureTab}
               </h3>
               <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: '#59636B' }}>
-                The UAE's first real estate agent recognition system designed to highlight the most responsive and authentic brokers to enhance your property search experience.
+                India's first real estate agent recognition system designed to highlight the most responsive and authentic brokers to enhance your property search experience.
               </p>
               <button
                 className="px-6 py-3 rounded-xl font-bold text-sm hover:-translate-y-0.5 transition-all"
@@ -447,8 +437,8 @@ export default function AboutUsPage() {
 
             <div className="space-y-4">
               {[
-                { img: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=200&q=80', name: 'Ahmed Khan' },
-                { img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80', name: 'Sarah Mitchell' },
+                { img: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=200&q=80', name: 'Rajesh Sharma' },
+                { img: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=200&q=80', name: 'Priya Patel' },
               ].map((agent, i) => (
                 <div
                   key={i}
@@ -505,7 +495,7 @@ export default function AboutUsPage() {
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center max-w-3xl mx-auto mb-10">
             <h2 className="text-3xl md:text-4xl font-bold mb-5 tracking-tight" style={{ color: '#171A1C' }}>
-              Our Customised Initiatives and Solutions for Real Estate Agents in the UAE
+              Our Customised Initiatives and Solutions for Real Estate Agents in India
             </h2>
             <p className="text-sm md:text-base leading-relaxed mb-8" style={{ color: '#59636B' }}>
               The performance of real estate agents and their exposure to the latest trends and technologies is essential to the real estate industry. Check out the full details of our B2B products on our Agent Portal.
@@ -563,7 +553,7 @@ export default function AboutUsPage() {
             We love hearing from our users! Whether you have a question, want to share your feedback, or need assistance, feel free to reach out to us. You can also <a href="#" style={{ color: '#F5A623', textDecoration: 'underline' }}>contact us</a> through our website or social media channels.
           </p>
           <p className="text-sm md:text-base leading-relaxed mb-8" style={{ color: '#59636B' }}>
-            At Divine Bricks, you can discover a world of real estate possibilities in the UAE. Your dream property is just a click away. Find your REAL home today.
+            At Divine Bricks, you can discover a world of real estate possibilities in India. Your dream property is just a click away. Find your REAL home today.
           </p>
         </div>
       </section>
