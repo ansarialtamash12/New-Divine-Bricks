@@ -2,14 +2,14 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Mail, Link2 } from "lucide-react";
-import { FcGoogle } from "react-icons/fc";
-import { FaFacebook, FaWhatsapp } from "react-icons/fa";
+import { Menu, X } from "lucide-react";
 import { usePathname } from "next/navigation";
+import LoginModal from "@/app/components/LoginModal";
+import RegisterModal from "@/app/components/RegisterModal";
 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [isLoginModalOpen, setIsLoginModalOpen] = useState(false);
+  const [authView, setAuthView] = useState(null); // null | "login" | "register"
   const [isScrolled, setIsScrolled] = useState(false);
   const pathname = usePathname();
 
@@ -24,7 +24,7 @@ export default function Navbar() {
 
   // Lock body scroll when mobile menu or modal is open
   useEffect(() => {
-    if (isMobileMenuOpen || isLoginModalOpen) {
+    if (isMobileMenuOpen || authView) {
       document.body.style.overflow = "hidden";
     } else {
       document.body.style.overflow = "";
@@ -32,7 +32,16 @@ export default function Navbar() {
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isMobileMenuOpen, isLoginModalOpen]);
+  }, [isMobileMenuOpen, authView]);
+
+  // ESC key closes modal
+  useEffect(() => {
+    const handleEsc = (e) => {
+      if (e.key === "Escape") setAuthView(null);
+    };
+    window.addEventListener("keydown", handleEsc);
+    return () => window.removeEventListener("keydown", handleEsc);
+  }, []);
 
   const isHomePage = pathname === "/";
   const isTransparent = isHomePage && !isScrolled;
@@ -137,7 +146,7 @@ export default function Navbar() {
               </button>
 
               <button
-                onClick={() => setIsLoginModalOpen(true)}
+                onClick={() => setAuthView("login")}
                 className="hidden sm:block px-3 sm:px-4 py-2 sm:py-2.5 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] rounded-xl text-xs sm:text-sm font-bold hover:shadow-lg hover:shadow-[#F5A623]/30 transition-all duration-200 active:scale-95 whitespace-nowrap"
               >
                 Sign up or Log in
@@ -177,7 +186,7 @@ export default function Navbar() {
               <button
                 onClick={() => {
                   setIsMobileMenuOpen(false);
-                  setIsLoginModalOpen(true);
+                  setAuthView("login");
                 }}
                 className="w-full mt-3 px-4 py-3 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] rounded-xl text-sm font-bold transition-all duration-200 sm:hidden active:scale-[0.98] shadow-[0_4px_14px_-4px_rgba(245,166,35,0.5)]"
               >
@@ -188,71 +197,18 @@ export default function Navbar() {
         </div>
       </header>
 
-      {/* ===== LOGIN MODAL ===== */}
-      {isLoginModalOpen && (
-        <div
-          className="fixed inset-0 z-[60] flex items-center justify-center bg-[#171A1C]/60 backdrop-blur-md p-3 sm:p-4 animate-fadeIn"
-          onClick={() => setIsLoginModalOpen(false)}
-        >
-          <div
-            className="bg-[#F7F4ED] rounded-2xl w-full max-w-md p-5 sm:p-8 relative shadow-2xl max-h-[90vh] overflow-y-auto border border-[#59636B]/15"
-            onClick={(e) => e.stopPropagation()}
-          >
-            <button
-              onClick={() => setIsLoginModalOpen(false)}
-              className="absolute top-3 right-3 sm:top-4 sm:right-4 text-[#59636B] hover:text-[#171A1C] p-1.5 rounded-full hover:bg-[#59636B]/10 transition-all"
-            >
-              <X className="w-5 h-5" />
-            </button>
+      {/* ===== AUTH MODALS ===== */}
+      <LoginModal
+        isOpen={authView === "login"}
+        onClose={() => setAuthView(null)}
+        onSwitchToRegister={() => setAuthView("register")}
+      />
 
-            <div className="flex justify-center mb-5 sm:mb-6">
-              <img
-                src="/3G_Realtors_Icon.png"
-                alt="Divine Bricks"
-                className="object-contain h-12 sm:h-14 w-auto"
-              />
-            </div>
-
-            <h2 className="text-lg sm:text-2xl font-bold text-[#171A1C] text-center mb-5 sm:mb-6">
-              Login into your account
-            </h2>
-
-            <div className="space-y-2.5 sm:space-y-3">
-              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-2.5 sm:py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
-                <FcGoogle className="w-5 h-5" /> Login with Google
-              </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-2.5 sm:py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
-                <FaFacebook className="w-5 h-5 text-[#1877F2]" /> Login with Facebook
-              </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-2.5 sm:py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
-                <FaWhatsapp className="w-5 h-5 text-[#25D366]" /> Login with WhatsApp
-              </button>
-            </div>
-
-            <div className="flex items-center gap-3 my-4 sm:my-5">
-              <div className="flex-1 h-px bg-[#59636B]/20"></div>
-              <span className="text-[#59636B] text-xs font-medium">OR</span>
-              <div className="flex-1 h-px bg-[#59636B]/20"></div>
-            </div>
-
-            <div className="space-y-2.5 sm:space-y-3">
-              <button className="w-full flex items-center justify-center gap-3 bg-gradient-to-r from-[#F5A623] to-[#E09400] text-[#171A1C] font-bold py-2.5 sm:py-3 rounded-xl transition-all text-sm hover:shadow-lg hover:shadow-[#F5A623]/30 active:scale-[0.98]">
-                <Mail className="w-5 h-5" /> Login with Email
-              </button>
-              <button className="w-full flex items-center justify-center gap-3 border border-[#59636B]/20 bg-white hover:bg-[#F7F4ED] text-[#171A1C] font-medium py-2.5 sm:py-3 rounded-xl transition-all text-sm active:scale-[0.98]">
-                <Link2 className="w-5 h-5" /> Login with one-time link
-              </button>
-            </div>
-
-            <div className="text-center text-sm mt-5 sm:mt-6 pt-4 sm:pt-5 border-t border-[#59636B]/15">
-              <span className="text-[#59636B]">New here? </span>
-              <button className="text-[#F5A623] font-bold hover:underline">
-                Create an account
-              </button>
-            </div>
-          </div>
-        </div>
-      )}
+      <RegisterModal
+        isOpen={authView === "register"}
+        onClose={() => setAuthView(null)}
+        onSwitchToLogin={() => setAuthView("login")}
+      />
     </>
   );
 }
