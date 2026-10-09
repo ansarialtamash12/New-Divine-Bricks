@@ -26,11 +26,9 @@ export default function RegisterModal({ isOpen, onClose, onSwitchToLogin }) {
       onClick={onClose}
     >
       <div
-        className="bg-[#F7F4ED] rounded-2xl w-full max-w-md relative shadow-2xl max-h-[90vh] overflow-y-auto scrollbar-hide border border-[#59636B]/15 p-5 sm:p-7"
+        className="bg-[#F7F4ED] rounded-2xl w-full max-w-2xl relative shadow-2xl max-h-[90vh] overflow-y-auto scrollbar-hide border border-[#59636B]/15 p-5 sm:p-7"
         onClick={(e) => e.stopPropagation()}
       >
-        {/* ... baaki sab same ... */}
-
         <button
           onClick={onClose}
           className="absolute top-3 right-3 text-[#59636B] hover:text-[#171A1C] p-1.5 rounded-full hover:bg-[#59636B]/10 transition-all"
@@ -68,80 +66,82 @@ export default function RegisterModal({ isOpen, onClose, onSwitchToLogin }) {
           <div className="space-y-4">
             <p className="text-[10px] font-bold text-[#59636B] tracking-widest">PROFILE</p>
 
-            <div>
-              <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
-                Login User ID <span className="text-[#F5A623]">*</span>
-              </label>
-              <div className="relative">
-                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
-                <input
-                  name="loginId"
-                  value={form.loginId}
-                  onChange={handleChange}
-                  placeholder="Choose a unique login ID"
-                  className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
-                />
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+              <div>
+                <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
+                  Login User ID <span className="text-[#F5A623]">*</span>
+                </label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
+                  <input
+                    name="loginId"
+                    value={form.loginId}
+                    onChange={handleChange}
+                    placeholder="Choose a unique login ID"
+                    className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
-                Full name <span className="text-[#F5A623]">*</span>
-              </label>
-              <div className="relative">
-                <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
-                <input
-                  name="fullName"
-                  value={form.fullName}
-                  onChange={handleChange}
-                  placeholder="Your full name"
-                  className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
-                />
+              <div>
+                <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
+                  Full name <span className="text-[#F5A623]">*</span>
+                </label>
+                <div className="relative">
+                  <User className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
+                  <input
+                    name="fullName"
+                    value={form.fullName}
+                    onChange={handleChange}
+                    placeholder="Your full name"
+                    className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
-                Email <span className="text-[#F5A623]">*</span>
-              </label>
-              <div className="relative">
-                <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
-                <input
-                  type="email"
-                  name="email"
-                  value={form.email}
-                  onChange={handleChange}
-                  placeholder="you@email.com"
-                  className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
-                />
+              <div>
+                <label className="text-xs font-bold text-[#171A1C] block mb-1.5">
+                  Email <span className="text-[#F5A623]">*</span>
+                </label>
+                <div className="relative">
+                  <Mail className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
+                  <input
+                    type="email"
+                    name="email"
+                    value={form.email}
+                    onChange={handleChange}
+                    placeholder="you@email.com"
+                    className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label className="text-xs font-bold text-[#171A1C] block mb-1.5">Mobile</label>
-              <div className="relative">
-                <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
-                <input
-                  name="mobile"
-                  value={form.mobile}
-                  onChange={handleChange}
-                  placeholder="+971..."
-                  className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
-                />
+              <div>
+                <label className="text-xs font-bold text-[#171A1C] block mb-1.5">Mobile</label>
+                <div className="relative">
+                  <Phone className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
+                  <input
+                    name="mobile"
+                    value={form.mobile}
+                    onChange={handleChange}
+                    placeholder="+971..."
+                    className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
+                  />
+                </div>
               </div>
-            </div>
 
-            <div>
-              <label className="text-xs font-bold text-[#171A1C] block mb-1.5">Agency / Skype</label>
-              <div className="relative">
-                <Link2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
-                <input
-                  name="agency"
-                  value={form.agency}
-                  onChange={handleChange}
-                  placeholder="Brokerage or Skype ID"
-                  className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
-                />
+              <div className="sm:col-span-2">
+                <label className="text-xs font-bold text-[#171A1C] block mb-1.5">Agency / Skype</label>
+                <div className="relative">
+                  <Link2 className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-[#59636B]" />
+                  <input
+                    name="agency"
+                    value={form.agency}
+                    onChange={handleChange}
+                    placeholder="Brokerage or Skype ID"
+                    className="w-full h-11 pl-10 pr-3 border border-[#59636B]/25 rounded-xl text-sm bg-white text-[#171A1C] placeholder-[#59636B]/60 focus:outline-none focus:ring-2 focus:ring-[#F5A623]/30 focus:border-[#F5A623] transition-all"
+                  />
+                </div>
               </div>
             </div>
           </div>
