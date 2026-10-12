@@ -124,7 +124,7 @@ export default function FindAgentPage() {
               </h3>
               <p className="text-xs text-[#59636B] mt-2">
                 To highlight great performance, we reward agents with customised
-                badges on Divine Bricks.
+                badges on 3G Realtors.
               </p>
             </div>
 

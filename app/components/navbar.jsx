@@ -79,7 +79,7 @@ export default function Navbar() {
                 >
            <img
   src="/3G_Realtors_Transparent.png"
-  alt="Divine Logo"
+  alt="3G Realtors"
   className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
     isTransparent
       ? "h-8 sm:h-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110" 

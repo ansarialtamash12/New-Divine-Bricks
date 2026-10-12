@@ -38,7 +38,7 @@ export default function RegisterModal({ isOpen, onClose, onSwitchToLogin }) {
 
         <h2 className="text-2xl font-bold text-[#171A1C] mb-1">Create your account</h2>
         <p className="text-xs text-[#59636B] mb-6">
-          Join Divine Bricks as a property agent — it only takes a minute.
+          Join 3G Realtors as a property agent — it only takes a minute.
         </p>
 
         <form onSubmit={(e) => e.preventDefault()} className="space-y-5">
