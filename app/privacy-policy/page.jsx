@@ -328,7 +328,7 @@ When we transfer data internationally, we ensure:
 Name: [Grievance Officer Name]
 Email: grievance@divinebricks.com
 Phone: +91 22 4890 1234
-Address: Divine Group Tower, 12th Floor, BKC, Mumbai – 400051
+Address: 3G Realtors Group Tower, 12th Floor, BKC, Mumbai – 400051
 
 The Grievance Officer will acknowledge your complaint within 24 hours and resolve it within 15 days.`,
     },
@@ -394,7 +394,7 @@ Email: privacy@divinebricks.com
 Phone: +91 22 4890 1234
 
 **Registered Office:**
-Divine Group Tower, 12th Floor
+3G Realtors Group Tower, 12th Floor
 Bandra Kurla Complex, Bandra East
 Mumbai – 400051, Maharashtra, India
 
@@ -669,7 +669,7 @@ We aim to respond to all privacy-related inquiries within 30 days.`,
               {
                 Icon: MapPin,
                 title: 'Office',
-                line1: 'Divine Group Tower',
+                line1: '3G Realtors Group Tower',
                 line2: 'BKC, Mumbai - 400051',
                 href: '#',
               },
