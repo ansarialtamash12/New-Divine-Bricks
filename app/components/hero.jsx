@@ -74,7 +74,9 @@ export default function Hero() {
 
   return (
     <div className="w-full">
-      <div className="relative w-full min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[740px] flex flex-col items-center justify-center pt-24 pb-12 sm:pt-28 sm:pb-16 overflow-hidden">
+      {/* Main Hero Wrapper - z-50 hata diya taaki Navbar dikhe */}
+      <div className="relative w-full min-h-[560px] sm:min-h-[620px] md:min-h-[680px] lg:min-h-[740px] flex flex-col items-center justify-center pt-24 pb-12 sm:pt-28 sm:pb-16">
+        
         {/* ===== Video Background ===== */}
         <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
           <video
@@ -121,7 +123,7 @@ export default function Hero() {
           {/* ===== Search Box ===== */}
           <div
             ref={dropdownRef}
-            className="w-full max-w-4xl bg-[#F7F4ED]/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-[#F5A623]/20"
+            className="relative z-50 w-full max-w-4xl bg-[#F7F4ED]/95 backdrop-blur-2xl rounded-3xl shadow-2xl border border-[#F5A623]/20"
           >
             {/* Tabs */}
             <div className="flex bg-[#F7F4ED] border-b border-[#59636B]/15 px-2 pt-2 overflow-x-auto scrollbar-hide rounded-t-3xl">
@@ -228,7 +230,7 @@ export default function Hero() {
                     )}
 
                     {/* Property Type */}
-                    <div className="relative">
+                    <div className="static sm:relative">
                       <button
                         onClick={() => toggleDropdown("propertyType")}
                         className="flex items-center gap-2 h-10 px-4 bg-white border border-[#59636B]/20 rounded-2xl text-[11px] sm:text-xs font-semibold text-[#59636B] hover:border-[#F5A623] hover:shadow-md transition-all cursor-pointer"
@@ -237,7 +239,7 @@ export default function Hero() {
                         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "propertyType" ? "rotate-180" : ""}`} />
                       </button>
                       {activeDropdown === "propertyType" && (
-                        <div className="absolute top-full left-0 mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn">
+                        <div className="absolute top-full left-0 right-0 mx-auto mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn sm:left-0 sm:right-auto sm:mx-0">
                           <div className="flex border-b border-[#59636B]/15 mb-3">
                             {["Residential", "Commercial"].map((cat) => (
                               <button
@@ -283,7 +285,7 @@ export default function Hero() {
                     </div>
 
                     {/* Beds & Baths */}
-                    <div className="relative">
+                    <div className="static sm:relative">
                       <button
                         onClick={() => toggleDropdown("bedsBaths")}
                         className="flex items-center gap-2 h-10 px-4 bg-white border border-[#59636B]/20 rounded-2xl text-[11px] sm:text-xs font-semibold text-[#59636B] hover:border-[#F5A623] hover:shadow-md transition-all cursor-pointer"
@@ -294,15 +296,15 @@ export default function Hero() {
                         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "bedsBaths" ? "rotate-180" : ""}`} />
                       </button>
                       {activeDropdown === "bedsBaths" && (
-                        <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn">
+                        <div className="absolute top-full left-0 right-0 mx-auto mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn sm:right-0 sm:left-auto sm:mx-0">
                           <div className="mb-4">
                             <p className="text-xs font-bold text-[#171A1C] mb-3">BHK</p>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="grid grid-cols-4 gap-2 sm:flex sm:flex-wrap">
                               {["1 RK", "1", "2", "3", "4", "5", "6", "7", "8+"].map((b) => (
                                 <button
                                   key={b}
                                   onClick={() => setSelectedBeds(selectedBeds === b ? null : b)}
-                                  className={`min-w-[36px] h-9 px-2.5 rounded-xl text-[11px] font-semibold border transition-all cursor-pointer ${
+                                  className={`h-9 px-2.5 rounded-xl text-[11px] font-semibold border transition-all cursor-pointer ${
                                     selectedBeds === b
                                       ? "border-[#F5A623] bg-[#F5A623]/15 text-[#F5A623] shadow-sm"
                                       : "border-[#59636B]/20 text-[#59636B] hover:border-[#59636B]/40 hover:bg-white"
@@ -315,12 +317,12 @@ export default function Hero() {
                           </div>
                           <div>
                             <p className="text-xs font-bold text-[#171A1C] mb-3">Baths</p>
-                            <div className="flex flex-wrap gap-2">
+                            <div className="grid grid-cols-4 gap-2 sm:flex sm:flex-wrap">
                               {["1", "2", "3", "4", "5", "6+"].map((b) => (
                                 <button
                                   key={b}
                                   onClick={() => setSelectedBaths(selectedBaths === b ? null : b)}
-                                  className={`min-w-[36px] h-9 px-2.5 rounded-xl text-[11px] font-semibold border transition-all cursor-pointer ${
+                                  className={`h-9 px-2.5 rounded-xl text-[11px] font-semibold border transition-all cursor-pointer ${
                                     selectedBaths === b
                                       ? "border-[#F5A623] bg-[#F5A623]/15 text-[#F5A623] shadow-sm"
                                       : "border-[#59636B]/20 text-[#59636B] hover:border-[#59636B]/40 hover:bg-white"
@@ -350,7 +352,7 @@ export default function Hero() {
                     </div>
 
                     {/* Price */}
-                    <div className="relative">
+                    <div className="static sm:relative">
                       <button
                         onClick={() => toggleDropdown("price")}
                         className="flex items-center gap-2 h-10 px-4 bg-white border border-[#59636B]/20 rounded-2xl text-[11px] sm:text-xs font-semibold text-[#59636B] hover:border-[#F5A623] hover:shadow-md transition-all cursor-pointer"
@@ -361,7 +363,7 @@ export default function Hero() {
                         <ChevronDown className={`w-3.5 h-3.5 transition-transform ${activeDropdown === "price" ? "rotate-180" : ""}`} />
                       </button>
                       {activeDropdown === "price" && (
-                        <div className="absolute top-full right-0 mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn">
+                        <div className="absolute top-full left-0 right-0 mx-auto mt-2 w-[calc(100vw-2rem)] max-w-[360px] bg-[#F7F4ED] border border-[#59636B]/15 rounded-2xl shadow-2xl z-50 p-4 animate-fadeIn sm:right-0 sm:left-auto sm:mx-0">
                           <div className="grid grid-cols-2 gap-3 mb-3">
                             <div>
                               <label className="text-[10px] text-[#59636B] font-semibold block mb-1.5">Minimum</label>

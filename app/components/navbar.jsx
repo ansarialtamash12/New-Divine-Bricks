@@ -77,15 +77,16 @@ export default function Navbar() {
                       : "px-0 py-0 bg-transparent border border-transparent"
                   }`}
                 >
-                  <img
-                    src="/3G_Realtors_Icon.png"
-                    alt="Divine Logo"
-                    className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
-                      isTransparent
-                        ? "h-9 sm:h-11 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110"
-                        : "h-10 sm:h-12"
-                    }`}
-                  />
+           <img
+  src="/3G_Realtors_Transparent.png"
+  alt="Divine Logo"
+  className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
+    isTransparent
+      ? "h-8 sm:h-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110" 
+      : "h-9 sm:h-11" 
+  }`}
+/>
+
                 </div>
               </Link>
             </div>
