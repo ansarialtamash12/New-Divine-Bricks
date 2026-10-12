@@ -13,7 +13,9 @@ const YouTubeIcon = () => (<svg viewBox="0 0 24 24" fill="currentColor" classNam
 const FOOTER_LINKS = [
   { label: 'About Us', href: '/about-us' },
   { label: 'Contact Us', href: '/contact-us' },
-  { label: 'Terms & Privacy Policy', href: '/terms-privacy-policy' },
+  { label: 'Terms & Conditions', href: '/terms&conditions' },
+  { label: 'Privacy Policy', href: '/privacy-policy' },
+  
 ];
 const cities = [
   { name: 'Andhra Pradesh' },
