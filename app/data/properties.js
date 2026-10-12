@@ -28,7 +28,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Landscaped Garden', 'Jogging Track', '24x7 Security', 'CCTV Surveillance', 'Power Backup', 'Car Parking', 'Indoor Games', 'Yoga Deck'],
     highlights: ['RERA Approved', 'Close to Ajmer Road', '10 mins from Airport', 'Near Metro Station'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 26.8450, lng: 75.7560 },
   },
   {
@@ -55,7 +55,7 @@ export const properties = [
     ],
     amenities: ['Gated Community', 'Wide Roads', 'Street Lights', 'Water Supply', 'Electricity', 'Drainage', 'Park', 'Temple', 'Community Hall', '24x7 Security', 'CCTV', 'Boundary Wall'],
     highlights: ['RERA Approved', 'Freehold Plots', 'Close to Agra Road', 'Ready for Construction'],
-    agent: { name: 'Priya Patel', company: 'Divine Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Priya Patel', company: '3G Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 26.9124, lng: 75.9000 },
   },
   {
@@ -82,7 +82,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Spa', 'Kids Play Area', 'Landscaped Garden', 'Jogging Track', 'Tennis Court', 'Yoga Studio', '24x7 Security', 'Concierge', 'Valet Parking'],
     highlights: ['RERA Approved', 'Premium Location', 'Near Shopping Malls', 'Excellent Connectivity'],
-    agent: { name: 'Anjali Mehta', company: 'Divine Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Anjali Mehta', company: '3G Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 26.8850, lng: 75.7500 },
   },
   {
@@ -109,7 +109,7 @@ export const properties = [
     ],
     amenities: ['Gated Community', 'Wide Roads', 'Park', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Temple', 'Community Hall', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['RERA Approved', 'Affordable Pricing', 'Freehold Plots', 'Easy EMI Available'],
-    agent: { name: 'Sabahuddin Khan', company: 'Divine Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Sabahuddin Khan', company: '3G Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 26.7850, lng: 75.8500 },
   },
 
@@ -140,7 +140,7 @@ export const properties = [
     ],
     amenities: ['Gated Township', 'Wide Roads', 'Park', 'Community Centre', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Temple', '24x7 Security', 'CCTV', 'Jogging Track'],
     highlights: ['RERA Approved', 'NCR Connectivity', 'Future Growth Area', 'Freehold Plots'],
-    agent: { name: 'Uday Manvani', company: 'Divine Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Uday Manvani', company: '3G Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.6063, lng: 76.6560 },
   },
   {
@@ -167,7 +167,7 @@ export const properties = [
     ],
     amenities: ['Gated Community', 'Landscaped Garden', 'Clubhouse', 'Kids Play Area', 'Wide Roads', 'Street Lights', 'Water Supply', 'Electricity', 'Drainage', '24x7 Security', 'CCTV', 'Park'],
     highlights: ['RERA Approved', 'Green Township', 'Close to NH-9', 'Strong Rental Demand'],
-    agent: { name: 'Blossom Fernandez', company: 'Divine Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Blossom Fernandez', company: '3G Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.6100, lng: 76.6600 },
   },
   {
@@ -194,7 +194,7 @@ export const properties = [
     ],
     amenities: ['Gated Township', 'Park', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Temple', 'Community Hall', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['RERA Approved', 'Affordable Pricing', 'NCR Connectivity', 'Easy EMI'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.6050, lng: 76.6500 },
   },
 
@@ -225,7 +225,7 @@ export const properties = [
     ],
     amenities: ['Park', 'Temple', 'Clubhouse', '24x7 Security', 'CCTV', 'Wide Roads', 'Underground Drainage', 'Street Lights', 'Water Supply', 'Electricity', 'Community Hall', 'Green Belt'],
     highlights: ['Near Noida International Airport', 'Yamuna Expressway', '100% Freehold', 'Registry Available'],
-    agent: { name: 'Priya Patel', company: 'Divine Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Priya Patel', company: '3G Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.1234, lng: 77.6045 },
   },
   {
@@ -252,7 +252,7 @@ export const properties = [
     ],
     amenities: ['Registry/Mutation', 'Bank Loan Facility', '30/40-ft Roads', 'Security', 'CCTV', 'Green Belt', 'Commercial Market', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park'],
     highlights: ['Near Noida Airport', 'Yamuna Expressway', 'Ready Inventory', 'Bank Loan Available'],
-    agent: { name: 'Anjali Mehta', company: 'Divine Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Anjali Mehta', company: '3G Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.1200, lng: 77.6100 },
   },
 
@@ -283,7 +283,7 @@ export const properties = [
     ],
     amenities: ['Smart City Infrastructure', 'Wide Roads', 'Underground Utilities', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Community Hall', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['Smart City', 'Industrial Growth', 'Future Infrastructure', 'Investment Opportunity'],
-    agent: { name: 'Sabahuddin Khan', company: 'Divine Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Sabahuddin Khan', company: '3G Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 22.2500, lng: 72.1900 },
   },
   {
@@ -310,7 +310,7 @@ export const properties = [
     ],
     amenities: ['Smart City', 'Wide Roads', 'Underground Cabling', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Community Hall', '24x7 Security', 'CCTV', 'Landscaping'],
     highlights: ['Smart City', 'Industrial Growth', 'Residential Plot', 'Investment Opportunity'],
-    agent: { name: 'Uday Manvani', company: 'Divine Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Uday Manvani', company: '3G Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 22.2450, lng: 72.1950 },
   },
 
@@ -341,7 +341,7 @@ export const properties = [
     ],
     amenities: ['Mountain View', 'Gated Community', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Temple', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['Mountain Living', 'Spiritual Destination', 'Peaceful Location', 'Tourism Potential'],
-    agent: { name: 'Blossom Fernandez', company: 'Divine Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Blossom Fernandez', company: '3G Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 29.9457, lng: 78.1642 },
   },
   {
@@ -368,7 +368,7 @@ export const properties = [
     ],
     amenities: ['Mountain View', 'Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Yoga Deck', 'Spa', 'Jogging Track', 'Meditation Hall', '24x7 Security', 'Power Backup', 'Restaurant'],
     highlights: ['Mountain Living', 'Spiritual Destination', 'Premium Location', 'Investment Opportunity'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 29.9500, lng: 78.1700 },
   },
   {
@@ -395,7 +395,7 @@ export const properties = [
     ],
     amenities: ['River View', 'Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Jogging Track', 'Yoga Deck', 'Landscaped Garden', 'Sports Court', '24x7 Security', 'Power Backup', 'Car Parking'],
     highlights: ['Mountain Living', 'Riverside Property', 'Peaceful Location', 'Excellent Connectivity'],
-    agent: { name: 'Priya Patel', company: 'Divine Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Priya Patel', company: '3G Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 30.3165, lng: 78.0322 },
   },
   {
@@ -422,7 +422,7 @@ export const properties = [
     ],
     amenities: ['Mountain View', 'Gated Township', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Temple', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['Mountain Living', 'Premium Township', 'Peaceful Location', 'Tourism Potential'],
-    agent: { name: 'Anjali Mehta', company: 'Divine Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Anjali Mehta', company: '3G Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 30.3200, lng: 78.0400 },
   },
 
@@ -453,7 +453,7 @@ export const properties = [
     ],
     amenities: ['Temple Proximity', 'Gated Community', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Community Hall', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['Near Temple', 'Spiritual Living', 'Gated Community', 'Tourism Investment'],
-    agent: { name: 'Sabahuddin Khan', company: 'Divine Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Sabahuddin Khan', company: '3G Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 27.5788, lng: 77.7000 },
   },
   {
@@ -480,7 +480,7 @@ export const properties = [
     ],
     amenities: ['Gated Community', 'Temple', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', 'Community Hall', '24x7 Security', 'CCTV', 'Landscaping'],
     highlights: ['RERA Approved', 'Near Temple', 'Spiritual Living', 'Secure Investment'],
-    agent: { name: 'Uday Manvani', company: 'Divine Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Uday Manvani', company: '3G Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 27.5850, lng: 77.7050 },
   },
   {
@@ -507,7 +507,7 @@ export const properties = [
     ],
     amenities: ['Freehold', 'Registry Ready', 'Temple Proximity', 'Gated Community', 'Wide Roads', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', '24x7 Security', 'CCTV', 'Park'],
     highlights: ['Freehold', 'Registry Ready', 'Near Temple', 'Spiritual Living'],
-    agent: { name: 'Blossom Fernandez', company: 'Divine Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Blossom Fernandez', company: '3G Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 27.5800, lng: 77.6950 },
   },
   {
@@ -534,7 +534,7 @@ export const properties = [
     ],
     amenities: ['Farmhouse Living', 'Temple Proximity', 'Organic Farming', 'Gated Community', 'Water Supply', 'Electricity', 'Drainage', 'Street Lights', 'Park', '24x7 Security', 'CCTV', 'Green Belt'],
     highlights: ['Farmhouse', 'Spiritual Living', 'Serene Environment', 'Investment Potential'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 27.5750, lng: 77.6900 },
   },
 
@@ -565,7 +565,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Children\'s Play Area', 'Landscaped Garden', 'Jogging Track', '24x7 Security', 'CCTV Surveillance', 'Power Backup', 'Car Parking', 'Indoor Games', 'Yoga Deck'],
     highlights: ['RERA Approved', 'Close to Thane Railway Station', '10 mins from Eastern Express Highway', 'Near Viviana Mall'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 19.2183, lng: 72.9781 },
   },
   {
@@ -592,7 +592,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'School', 'Hospital', 'Shopping Centre', 'Jogging Track', 'Sports Complex', '24x7 Security', 'Power Backup', 'EV Charging'],
     highlights: ['RERA Approved', 'Self-sustained smart city', 'Close to Dombivli Railway Station', 'Near upcoming Metro Line 5'],
-    agent: { name: 'Sabahuddin Khan', company: 'Divine Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Sabahuddin Khan', company: '3G Realtors', phone: '+91 98765 43215', image: 'https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 19.2183, lng: 73.0860 },
   },
   {
@@ -619,7 +619,7 @@ export const properties = [
     ],
     amenities: ['Lake View', 'Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Landscaped Garden', 'Jogging Track', 'Tennis Court', 'Restaurants', '24x7 Security', 'Concierge', 'Valet Parking'],
     highlights: ['RERA Approved', 'Lakeside Property', 'Premium Location', 'Close to IIT Bombay'],
-    agent: { name: 'Anjali Mehta', company: 'Divine Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Anjali Mehta', company: '3G Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 19.1197, lng: 72.9051 },
   },
   {
@@ -646,7 +646,7 @@ export const properties = [
     ],
     amenities: ['Racecourse View', 'Infinity Pool', 'Spa & Wellness', 'Gymnasium', 'Clubhouse', 'Private Theatre', 'Concierge Service', 'Valet Parking', 'Business Lounge', 'Kids Play Area', '24x7 Security', 'Helipad Access'],
     highlights: ['RERA Approved', 'Overlooking Racecourse', 'Ultra-Luxury', 'Close to Business District'],
-    agent: { name: 'Uday Manvani', company: 'Divine Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Uday Manvani', company: '3G Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 18.9820, lng: 72.8150 },
   },
 
@@ -677,7 +677,7 @@ export const properties = [
     ],
     amenities: ['Forest Trail', 'Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Yoga Pavilion', 'Spa', 'Tennis Court', 'Amphitheatre', '24x7 Security', 'Concierge Services', 'EV Charging'],
     highlights: ['RERA Approved', 'Adjacent to Sector 43 Metro Station', '5 mins from DLF Mall of India', 'Forest-themed community'],
-    agent: { name: 'Priya Patel', company: 'Divine Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Priya Patel', company: '3G Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.5355, lng: 77.3910 },
   },
   {
@@ -704,7 +704,7 @@ export const properties = [
     ],
     amenities: ['Golf Course View', 'Infinity Pool', 'Spa & Wellness', 'Private Theatre', 'Gymnasium', 'Fine Dining Restaurant', 'Concierge Service', 'Valet Parking', 'Business Lounge', 'Kids Play Area', '24x7 Security', 'Helipad Access'],
     highlights: ['RERA Approved', 'Overlooking DLF Golf Course', 'Close to Cyber Hub', 'Near Huda City Centre Metro'],
-    agent: { name: 'Uday Manvani', company: 'Divine Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Uday Manvani', company: '3G Realtors', phone: '+91 98765 43213', image: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.4595, lng: 77.0266 },
   },
   {
@@ -731,7 +731,7 @@ export const properties = [
     ],
     amenities: ['Infinity Pool', 'Spa & Wellness', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Tennis Court', 'Amphitheatre', 'Yoga Studio', 'Business Lounge', '24x7 Security', 'Concierge Service', 'EV Charging'],
     highlights: ['RERA Approved', 'Close to Golf Course Extension Road', 'Near Sector 55-56 Metro Station', 'Proximity to top schools and hospitals'],
-    agent: { name: 'Rajesh Sharma', company: 'Divine Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Rajesh Sharma', company: '3G Realtors', phone: '+91 98765 43210', image: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 28.4390, lng: 77.0960 },
   },
 
@@ -762,7 +762,7 @@ export const properties = [
     ],
     amenities: ['Lake View Deck', 'Infinity Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Tennis Court', 'Jogging Track', 'Yoga Studio', 'Multipurpose Hall', '24x7 Security', 'Rainwater Harvesting', 'Solar Power'],
     highlights: ['RERA Approved', 'Lake-facing apartments', 'Close to ITPL and Whitefield tech parks', 'Near Phoenix Marketcity'],
-    agent: { name: 'Anjali Mehta', company: 'Divine Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Anjali Mehta', company: '3G Realtors', phone: '+91 98765 43212', image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 12.9698, lng: 77.7499 },
   },
   {
@@ -789,7 +789,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Landscaped Garden', 'Jogging Track', 'Amphitheatre', 'Sports Court', 'Yoga Deck', '24x7 Security', 'Power Backup', 'Rainwater Harvesting'],
     highlights: ['RERA Approved', 'Close to ITPL and Bagmane Tech Park', '10 mins from Whitefield', 'Near New Horizon Mall'],
-    agent: { name: 'Blossom Fernandez', company: 'Divine Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Blossom Fernandez', company: '3G Realtors', phone: '+91 98765 43214', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 12.9784, lng: 77.7324 },
   },
 
@@ -820,7 +820,7 @@ export const properties = [
     ],
     amenities: ['Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Tennis Court', 'Badminton Court', 'Jogging Track', 'Yoga Deck', 'Party Hall', '24x7 Security', 'Power Backup', 'Car Parking'],
     highlights: ['RERA Approved', 'Close to Financial District', 'Near HITEC City and Gachibowli', 'Excellent road connectivity'],
-    agent: { name: 'Tamilia Kiria', company: 'Divine Realtors', phone: '+91 98765 43216', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Tamilia Kiria', company: '3G Realtors', phone: '+91 98765 43216', image: 'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 17.3850, lng: 78.3843 },
   },
 
@@ -851,7 +851,7 @@ export const properties = [
     ],
     amenities: ['Hill View', 'Swimming Pool', 'Gymnasium', 'Clubhouse', 'Kids Play Area', 'Jogging Track', 'Yoga Deck', 'Amphitheatre', 'Sports Court', '24x7 Security', 'Power Backup', 'EV Charging'],
     highlights: ['RERA Approved', 'Hill-facing apartments', 'Close to Hinjewadi IT Park', 'Excellent connectivity to Mumbai-Pune Expressway'],
-    agent: { name: 'Priya Patel', company: 'Divine Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
+    agent: { name: 'Priya Patel', company: '3G Realtors', phone: '+91 98765 43211', image: 'https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&q=80&w=200&h=200' },
     coordinates: { lat: 18.5793, lng: 73.7411 },
   },
 ];

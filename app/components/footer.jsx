@@ -144,7 +144,7 @@ export default function Footer() {
 
             <img
               src="/3G_Realtors_Transparent.png"
-              alt="Divine Bricks Logo"
+              alt="3G Realtors"
               className="h-15 w-auto object-contain"
             />
           </div>
@@ -205,7 +205,7 @@ export default function Footer() {
         {/* Bottom bar */}
         <div className="flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 sm:flex-row">
           <p className="text-sm text-[#59636B]">
-            © 2008 - 2026 Divine Bricks. All rights reserved. Proudly made in
+            © 2008 - 2026 3G Realtors . All rights reserved. Proudly made in
             India 🇮🇳
           </p>
         </div>

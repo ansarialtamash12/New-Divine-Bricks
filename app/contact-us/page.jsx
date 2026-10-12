@@ -79,27 +79,27 @@ export default function ContactUsPage() {
   const offices = [
     {
       city: 'Mumbai',
-      address: 'Divine Group Tower, 12th Floor, Bandra Kurla Complex, Bandra East, Mumbai - 400051, Maharashtra',
+      address: '3G Realtors Group Tower, 12th Floor, Bandra Kurla Complex, Bandra East, Mumbai - 400051, Maharashtra',
       phone: '+91 22 4890 1234',
-      email: 'mumbai@divinebricks.com',
+      email: 'mumbai@3G Realtorsbricks.com',
     },
     {
       city: 'Delhi NCR',
-      address: 'Divine Bricks HQ, Cyber Hub, DLF Phase 2, Sector 24, Gurugram - 122002, Haryana',
+      address: '3G Realtors HQ, Cyber Hub, DLF Phase 2, Sector 24, Gurugram - 122002, Haryana',
       phone: '+91 124 456 7890',
-      email: 'delhi@divinebricks.com',
+      email: 'delhi@3G Realtorsbricks.com',
     },
     {
       city: 'Bangalore',
       address: 'Prestige Tech Park, Kadubeesanahalli, Outer Ring Road, Bangalore - 560103, Karnataka',
       phone: '+91 80 4567 8901',
-      email: 'bangalore@divinebricks.com',
+      email: 'bangalore@3G Realtorsbricks.com',
     },
     {
       city: 'Hyderabad',
-      address: 'Divine Bricks Space, HITEC City, Madhapur, Hyderabad - 500081, Telangana',
+      address: '3G Realtors Space, HITEC City, Madhapur, Hyderabad - 500081, Telangana',
       phone: '+91 40 4567 8901',
-      email: 'hyderabad@divinebricks.com',
+      email: 'hyderabad@3G Realtorsbricks.com',
     },
   ];
 
@@ -108,51 +108,51 @@ export default function ContactUsPage() {
       Icon: Users,
       title: 'For Buyers & Tenants',
       desc: 'Looking for your dream home? Our team is here to help you find the perfect property.',
-      email: 'buyers@divinebricks.com',
+      email: 'buyers@3G Realtorsbricks.com',
       phone: '+91 1800 200 300',
     },
     {
       Icon: Building2,
       title: 'For Sellers & Landlords',
-      desc: 'List your property on Divine Bricks and reach millions of verified buyers and tenants.',
-      email: 'sellers@divinebricks.com',
+      desc: 'List your property on 3G Realtors and reach millions of verified buyers and tenants.',
+      email: 'sellers@3G Realtorsbricks.com',
       phone: '+91 1800 200 400',
     },
     {
       Icon: Briefcase,
       title: 'For Agents & Developers',
       desc: 'Grow your business with our premium tools, verified leads and exclusive listings.',
-      email: 'partners@divinebricks.com',
+      email: 'partners@3G Realtorsbricks.com',
       phone: '+91 1800 200 500',
     },
     {
       Icon: Headphones,
       title: 'Customer Support',
       desc: 'Need help with the platform? Our 24/7 support team is a call or click away.',
-      email: 'support@divinebricks.com',
+      email: 'support@3G Realtorsbricks.com',
       phone: '+91 1800 200 600',
     },
   ];
 
   const faqs = [
     {
-      q: 'How can I list my property on Divine Bricks?',
+      q: 'How can I list my property on 3G Realtors?',
       a: 'You can list your property for free by clicking the "Post Property" button on our homepage. Fill in the details, upload photos, and your listing will go live within 24 hours.',
     },
     {
-      q: 'Is Divine Bricks available across all Indian cities?',
+      q: 'Is 3G Realtors available across all Indian cities?',
       a: 'Yes! We currently operate in 25+ major cities including Mumbai, Delhi NCR, Bangalore, Hyderabad, Pune, Chennai, Kolkata, Ahmedabad, Jaipur, and more.',
     },
     {
       q: 'How do I report a fake listing?',
-      a: 'Every listing has a "Report" button. You can also email us at report@divinebricks.com with the listing ID and we will investigate within 24 hours.',
+      a: 'Every listing has a "Report" button. You can also email us at report@3G Realtorsbricks.com with the listing ID and we will investigate within 24 hours.',
     },
     {
       q: 'Do you charge for property listings?',
       a: 'Basic listings are completely free. We also offer premium listings with enhanced visibility, featured placement, and verified badges for a small fee.',
     },
     {
-      q: 'How can I become a TruBroker™ on Divine Bricks?',
+      q: 'How can I become a TruBroker™ on 3G Realtors?',
       a: 'TruBroker™ status is awarded to agents with high response rates, verified listings, and excellent customer feedback. Apply through our Agent Portal.',
     },
   ];
@@ -164,7 +164,7 @@ export default function ContactUsPage() {
       <section className="relative w-full h-[360px] md:h-[420px] lg:h-[480px] overflow-hidden bg-[#171A1C]">
         <img
           src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?auto=format&fit=crop&w=1920&q=80"
-          alt="Contact Divine Bricks"
+          alt="Contact 3G Realtors"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div
@@ -212,9 +212,9 @@ export default function ContactUsPage() {
               {
                 Icon: Mail,
                 title: 'Email Us',
-                line1: 'hello@divinebricks.com',
+                line1: 'hello@3G Realtorsbricks.com',
                 line2: 'We reply within 24 hours',
-                href: 'mailto:hello@divinebricks.com',
+                href: 'mailto:hello@3G Realtorsbricks.com',
               },
               {
                 Icon: MessageSquare,
@@ -426,7 +426,7 @@ export default function ContactUsPage() {
                   <div className="flex gap-3">
                     <MapPin className="w-5 h-5 flex-shrink-0 mt-0.5" style={{ color: '#F5A623' }} />
                     <p className="text-sm leading-relaxed" style={{ color: '#59636B' }}>
-                      Divine Group Tower, 12th Floor,<br />
+                      3G Realtors Group Tower, 12th Floor,<br />
                       Bandra Kurla Complex, Bandra East,<br />
                       Mumbai - 400051, Maharashtra, India
                     </p>
@@ -439,8 +439,8 @@ export default function ContactUsPage() {
                   </div>
                   <div className="flex gap-3 items-center">
                     <Mail className="w-5 h-5 flex-shrink-0" style={{ color: '#F5A623' }} />
-                    <a href="mailto:hello@divinebricks.com" className="text-sm hover:underline" style={{ color: '#59636B' }}>
-                      hello@divinebricks.com
+                    <a href="mailto:hello@3G Realtorsbricks.com" className="text-sm hover:underline" style={{ color: '#59636B' }}>
+                      hello@3G Realtorsbricks.com
                     </a>
                   </div>
                   <div className="flex gap-3 items-center">
@@ -722,7 +722,7 @@ export default function ContactUsPage() {
               <Phone className="w-4 h-4" /> Call Now
             </a>
             <a
-              href="mailto:hello@divinebricks.com"
+              href="mailto:hello@3G Realtorsbricks.com"
               className="inline-flex items-center gap-2 px-8 py-3.5 rounded-2xl font-bold text-sm border-2 transition-all hover:-translate-y-0.5"
               style={{ borderColor: '#F5A623', color: '#F5A623', backgroundColor: 'transparent' }}
             >

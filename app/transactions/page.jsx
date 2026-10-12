@@ -34,24 +34,7 @@ export default function IndiaTransactionsPage() {
   return (
     <div className="w-full bg-[#F7F4ED] flex flex-col font-sans min-h-screen">
       
-      {/* NAVBAR */}
-      {/* <nav className="w-full bg-white/90 backdrop-blur-xl border-b border-[#59636B]/15 sticky top-0 z-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex justify-between items-center h-16">
-            <Link href="/" className="text-xl font-bold text-[#F5A623]">
-              Divine Bricks
-            </Link>
-            <div className="hidden md:flex items-center space-x-1">
-              <Link href="/properties" className="text-[#59636B] hover:text-[#F5A623] text-sm font-medium px-3 py-2 rounded-xl hover:bg-[#F5A623]/10 transition-all">Properties</Link>
-              <Link href="/new-projects" className="text-[#59636B] hover:text-[#F5A623] text-sm font-medium px-3 py-2 rounded-xl hover:bg-[#F5A623]/10 transition-all">New Projects</Link>
-              <Link href="/transactions" className="text-[#171A1C] font-bold text-sm bg-[#F5A623]/15 px-3 py-2 rounded-xl">Transactions</Link>
-              <Link href="/truest-imate" className="text-[#59636B] hover:text-[#F5A623] text-sm font-medium px-3 py-2 rounded-xl hover:bg-[#F5A623]/10 transition-all">TruEstimate™</Link>
-              <Link href="/find-agent" className="text-[#59636B] hover:text-[#F5A623] text-sm font-medium px-3 py-2 rounded-xl hover:bg-[#F5A623]/10 transition-all">Agents</Link>
-            </div>
-            <button className="text-sm font-bold text-[#171A1C] hover:text-[#F5A623] transition-colors">Sign up or Log in</button>
-          </div>
-        </div>
-      </nav> */}
+   
 
       {/* FILTER BAR */}
       <div className="w-full bg-white border-b border-[#59636B]/15 py-4 shadow-sm">

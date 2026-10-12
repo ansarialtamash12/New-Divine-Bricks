@@ -34,15 +34,15 @@ export default function TermsPage() {
       id: 1,
       Icon: FileText,
       title: '1. Acceptance of Terms',
-      content: `Welcome to Divine Bricks ("Company", "we", "our", "us"). By accessing or using our website, mobile application, or any related services (collectively, the "Services"), you agree to be bound by these Terms and Conditions ("Terms"). 
+      content: `Welcome to 3G Realtors ("Company", "we", "our", "us"). By accessing or using our website, mobile application, or any related services (collectively, the "Services"), you agree to be bound by these Terms and Conditions ("Terms"). 
 
-If you do not agree with any part of these Terms, you must immediately discontinue use of our Services. Your continued use of Divine Bricks constitutes your acceptance of these Terms and any future amendments.`,
+If you do not agree with any part of these Terms, you must immediately discontinue use of our Services. Your continued use of 3G Realtors constitutes your acceptance of these Terms and any future amendments.`,
     },
     {
       id: 2,
       Icon: UserCheck,
       title: '2. Eligibility & Registration',
-      content: `You must be at least 18 years of age and legally capable of entering into binding contracts under the Indian Contract Act, 1872. By using Divine Bricks, you represent and warrant that:
+      content: `You must be at least 18 years of age and legally capable of entering into binding contracts under the Indian Contract Act, 1872. By using 3G Realtors, you represent and warrant that:
 
 • You are at least 18 years old
 • You are an Indian resident or legally permitted to transact in Indian real estate
@@ -55,26 +55,26 @@ To access certain features, you must register as a user by creating an account. 
       id: 3,
       Icon: Building2,
       title: '3. Property Listings & Content',
-      content: `All property listings, descriptions, images, floor plans, pricing, and other content on Divine Bricks are provided by:
+      content: `All property listings, descriptions, images, floor plans, pricing, and other content on 3G Realtors are provided by:
 • Property owners and landlords
 • Licensed real estate agents and brokers
 • Real estate developers and builders
 • Other authorized third parties
 
-While we strive to ensure accuracy, Divine Bricks does not guarantee the completeness, reliability, or accuracy of any listing. Users are strongly advised to:
+While we strive to ensure accuracy, 3G Realtors does not guarantee the completeness, reliability, or accuracy of any listing. Users are strongly advised to:
 
 • Independently verify all property details
 • Physically inspect properties before making any commitment
 • Verify legal documents (title deed, RERA registration, encumbrance certificate)
 • Conduct due diligence with legal and financial advisors
 
-Divine Bricks acts solely as a listing platform and is NOT a party to any transaction between buyers, sellers, tenants, landlords, or agents.`,
+3G Realtors acts solely as a listing platform and is NOT a party to any transaction between buyers, sellers, tenants, landlords, or agents.`,
     },
     {
       id: 4,
       Icon: IndianRupee,
       title: '4. Listing Services & Fees',
-      content: `Divine Bricks offers both free and paid services:
+      content: `3G Realtors offers both free and paid services:
 
 **Free Services:**
 • Basic property listings
@@ -96,7 +96,7 @@ All fees are in Indian Rupees (INR) and are subject to applicable GST. Payments 
       id: 5,
       Icon: Ban,
       title: '5. Prohibited Conduct',
-      content: `By using Divine Bricks, you agree NOT to:
+      content: `By using 3G Realtors, you agree NOT to:
 
 • Post false, misleading, or fraudulent property listings
 • Use the Services for any illegal, unlawful, or unauthorized purpose
@@ -120,15 +120,15 @@ Violation of these rules may result in:
       id: 6,
       Icon: Copyright,
       title: '6. Intellectual Property Rights',
-      content: `All content on Divine Bricks — including but not limited to:
+      content: `All content on 3G Realtors — including but not limited to:
 
 • Logos, brand names, and trademarks
 • Text, articles, blogs, and descriptions
 • Graphics, images, and illustrations
 • Software, code, and databases
-• Product names (TruCheck™, TruBroker™, TruEstimate™, DivineGPT)
+• Product names (TruCheck™, TruBroker™, TruEstimate™, 3GGPT)
 
-— are the exclusive property of Divine Bricks or its licensors, and are protected under the Indian Copyright Act, 1957, and international copyright laws.
+— are the exclusive property of 3G Realtors or its licensors, and are protected under the Indian Copyright Act, 1957, and international copyright laws.
 
 You may NOT:
 • Copy, reproduce, or republish our content without written permission
@@ -136,13 +136,13 @@ You may NOT:
 • Modify, distribute, or create derivative works
 • Reverse engineer any part of our platform
 
-**User Content License:** By posting content (listings, reviews, images), you grant Divine Bricks a non-exclusive, worldwide, royalty-free license to use, display, and distribute that content on our platform and for marketing purposes.`,
+**User Content License:** By posting content (listings, reviews, images), you grant 3G Realtors a non-exclusive, worldwide, royalty-free license to use, display, and distribute that content on our platform and for marketing purposes.`,
     },
     {
       id: 7,
       Icon: AlertCircle,
       title: '7. Disclaimer of Warranties',
-      content: `Divine Bricks provides its Services on an "as is" and "as available" basis. We make NO warranties, express or implied, including but not limited to:
+      content: `3G Realtors provides its Services on an "as is" and "as available" basis. We make NO warranties, express or implied, including but not limited to:
 
 • Accuracy or completeness of property listings
 • Uninterrupted or error-free Service
@@ -162,7 +162,7 @@ All transactions are at your own risk. Always consult legal, financial, and tax 
       id: 8,
       Icon: Scale,
       title: '8. Limitation of Liability',
-      content: `To the maximum extent permitted by law, Divine Bricks and its parent company, directors, employees, and affiliates shall NOT be liable for any:
+      content: `To the maximum extent permitted by law, 3G Realtors and its parent company, directors, employees, and affiliates shall NOT be liable for any:
 
 • Indirect, incidental, special, or consequential damages
 • Loss of profits, revenue, or business opportunities
@@ -171,7 +171,7 @@ All transactions are at your own risk. Always consult legal, financial, and tax 
 • Financial losses from fraudulent listings
 • Damages arising from reliance on any listing
 
-Our total aggregate liability shall NOT exceed the amount paid by you (if any) to Divine Bricks in the preceding 12 months, or ₹10,000, whichever is lower.
+Our total aggregate liability shall NOT exceed the amount paid by you (if any) to 3G Realtors in the preceding 12 months, or ₹10,000, whichever is lower.
 
 This limitation applies regardless of the legal theory (contract, tort, negligence, strict liability, or otherwise).`,
     },
@@ -181,19 +181,19 @@ This limitation applies regardless of the legal theory (contract, tort, negligen
       title: '9. Privacy & Data Protection',
       content: `Your privacy is important to us. Our collection, use, and protection of your personal data is governed by our Privacy Policy, which is incorporated into these Terms by reference.
 
-By using Divine Bricks, you consent to:
+By using 3G Realtors, you consent to:
 • Collection of personal information as described in our Privacy Policy
 • Use of cookies and similar tracking technologies
 • Communication via email, SMS, WhatsApp, and phone
 • Sharing of your contact details with agents/owners you contact
 
-You can manage your communication preferences from your account settings. To delete your data, contact privacy@divinebricks.com.`,
+You can manage your communication preferences from your account settings. To delete your data, contact privacy@3Gbricks.com.`,
     },
     {
       id: 10,
       Icon: ShieldCheck,
       title: '10. Third-Party Services & Links',
-      content: `Divine Bricks may contain links to third-party websites, services, or advertisements. We are NOT responsible for:
+      content: `3G Realtors may contain links to third-party websites, services, or advertisements. We are NOT responsible for:
 
 • The content, accuracy, or privacy practices of third parties
 • Products or services offered by third parties
@@ -205,13 +205,13 @@ Your interactions with third parties are governed by their own terms and conditi
       id: 11,
       Icon: RefreshCw,
       title: '11. Modifications to Terms',
-      content: `Divine Bricks reserves the right to modify these Terms at any time without prior notice. When we make significant changes, we will:
+      content: `3G Realtors reserves the right to modify these Terms at any time without prior notice. When we make significant changes, we will:
 
 • Post a prominent notice on our website
 • Send an email to registered users
 • Update the "Last Updated" date at the top of this page
 
-Your continued use of Divine Bricks after such modifications constitutes your acceptance of the updated Terms. It is your responsibility to review these Terms periodically.`,
+Your continued use of 3G Realtors after such modifications constitutes your acceptance of the updated Terms. It is your responsibility to review these Terms periodically.`,
     },
     {
       id: 12,
@@ -219,10 +219,10 @@ Your continued use of Divine Bricks after such modifications constitutes your ac
       title: '12. Governing Law & Dispute Resolution',
       content: `These Terms shall be governed by and construed in accordance with the laws of India.
 
-**Jurisdiction:** Any disputes arising out of or relating to these Terms or the use of Divine Bricks shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India.
+**Jurisdiction:** Any disputes arising out of or relating to these Terms or the use of 3G Realtors shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India.
 
 **Dispute Resolution Process:**
-1. First, contact us at legal@divinebricks.com with details of the dispute
+1. First, contact us at legal@3Gbricks.com with details of the dispute
 2. We will attempt to resolve the matter amicably within 30 days
 3. If unresolved, disputes may be referred to arbitration under the Arbitration and Conciliation Act, 1996
 4. The arbitration shall be conducted in Mumbai in English
@@ -233,7 +233,7 @@ Your continued use of Divine Bricks after such modifications constitutes your ac
       id: 13,
       Icon: UserCheck,
       title: '13. Termination of Account',
-      content: `Divine Bricks reserves the right to suspend or terminate your account at any time, with or without notice, for:
+      content: `3G Realtors reserves the right to suspend or terminate your account at any time, with or without notice, for:
 
 • Violation of these Terms
 • Fraudulent or illegal activity
@@ -251,7 +251,7 @@ Upon termination:
       id: 14,
       Icon: Scale,
       title: '14. Indemnification',
-      content: `You agree to indemnify and hold harmless Divine Bricks, its parent company, directors, officers, employees, and agents from any and all claims, damages, losses, liabilities, costs, and expenses (including legal fees) arising from:
+      content: `You agree to indemnify and hold harmless 3G Realtors, its parent company, directors, officers, employees, and agents from any and all claims, damages, losses, liabilities, costs, and expenses (including legal fees) arising from:
 
 • Your violation of these Terms
 • Your violation of any third-party rights
@@ -268,11 +268,11 @@ This indemnification obligation will survive the termination of your account and
       content: `If you have any questions, concerns, or complaints about these Terms and Conditions, please contact us:
 
 **Legal Team:**
-Email: legal@divinebricks.com
+Email: legal@3Gbricks.com
 Phone: +91 22 4890 1234
 
 **Registered Office:**
-Divine Group Tower, 12th Floor
+3G Group Tower, 12th Floor
 Bandra Kurla Complex, Bandra East
 Mumbai – 400051, Maharashtra, India
 
@@ -280,8 +280,8 @@ Mumbai – 400051, Maharashtra, India
 Monday to Friday: 9:00 AM – 7:00 PM IST
 Saturday: 10:00 AM – 4:00 PM IST
 
-For privacy-related matters, please write to: privacy@divinebricks.com
-For reporting fake listings, please write to: report@divinebricks.com`,
+For privacy-related matters, please write to: privacy@3Gbricks.com
+For reporting fake listings, please write to: report@3Gbricks.com`,
     },
   ];
 
@@ -319,7 +319,7 @@ For reporting fake listings, please write to: report@divinebricks.com`,
               Terms & Conditions
             </h1>
             <p className="text-sm md:text-base text-white/80 max-w-2xl mx-auto">
-              Please read these terms carefully before using Divine Bricks. By using our Services, you agree to be bound by these terms.
+              Please read these terms carefully before using 3G Realtors. By using our Services, you agree to be bound by these terms.
             </p>
             <p className="text-xs text-white/60 mt-4">
               Last Updated: 9 October 2026
@@ -385,7 +385,7 @@ For reporting fake listings, please write to: report@divinebricks.com`,
               Terms & Conditions
             </h2>
             <p className="text-sm md:text-base max-w-2xl mx-auto" style={{ color: '#59636B' }}>
-              These terms govern your use of Divine Bricks and its services. Please read them carefully.
+              These terms govern your use of 3G Realtors and its services. Please read them carefully.
             </p>
           </div>
 
@@ -476,7 +476,7 @@ For reporting fake listings, please write to: report@divinebricks.com`,
               <CheckCircle2 className="w-8 h-8" style={{ color: '#F5A623' }} strokeWidth={1.8} />
             </div>
             <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight" style={{ color: '#171A1C' }}>
-              By Using Divine Bricks, You Agree
+              By Using 3G Realtors, You Agree
             </h2>
             <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: '#59636B' }}>
               Your continued use of our Services constitutes your acceptance of these Terms and Conditions. If you have any concerns, please contact us before continuing to use the platform.
@@ -522,9 +522,9 @@ For reporting fake listings, please write to: report@divinebricks.com`,
               {
                 Icon: Mail,
                 title: 'Email',
-                line1: 'legal@divinebricks.com',
+                line1: 'legal@3Gbricks.com',
                 line2: 'We reply within 48 hours',
-                href: 'mailto:legal@divinebricks.com',
+                href: 'mailto:legal@3Gbricks.com',
               },
               {
                 Icon: Phone,
@@ -536,7 +536,7 @@ For reporting fake listings, please write to: report@divinebricks.com`,
               {
                 Icon: MapPin,
                 title: 'Address',
-                line1: 'Divine Group Tower',
+                line1: '3G Group Tower',
                 line2: 'BKC, Mumbai - 400051',
                 href: '#',
               },

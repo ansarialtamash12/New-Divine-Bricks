@@ -37,7 +37,7 @@ export default function AboutUsPage() {
     'TruCheck™',
     'TruEstimate™',
     'India Transactions',
-    'DivineGPT',
+    
   ];
 
   const offerings = [
@@ -46,11 +46,7 @@ export default function AboutUsPage() {
       title: 'Comprehensive Listings',
       desc: 'Explore a vast database of residential and commercial properties including apartments, villas, offices and more across India.',
     },
-    {
-      Icon: CheckSquare,
-      title: 'Advanced Tools',
-      desc: 'Our cutting-edge products such as TruCheck™, TruBroker™, TruEstimate™, DivineGPT, India Transactions and more help you find properties quickly and easily.',
-    },
+   
     {
       Icon: BarChart3,
       title: 'Market Insights',
@@ -63,13 +59,13 @@ export default function AboutUsPage() {
     },
     {
       Icon: GraduationCap,
-      title: 'Divine Bricks Academy',
+      title: '3G Realtors Academy',
       desc: 'This is our bespoke training academy for real estate professionals in India. You can join any of these specialised courses for free.',
     },
   ];
 
   const contentResources = [
-    { title: 'myDivine Bricks', desc: "India's beloved property and lifestyle blog" },
+    { title: '3G Realtors', desc: "India's beloved property and lifestyle blog" },
     { title: 'हिंदी ब्लॉग', desc: 'The most popular Hindi real estate blog in the country' },
     { title: 'BUILDING GUIDES', desc: 'Explore 6500+ commercial and residential buildings across India' },
     { title: 'AREA GUIDES', desc: 'Learn about 3000+ localities and communities' },
@@ -90,7 +86,7 @@ export default function AboutUsPage() {
           >
             <img
               src={src}
-              alt={`Divine Bricks ${i + 1}`}
+              alt={`3G Realtors ${i + 1}`}
               className="absolute inset-0 w-full h-full object-cover"
             />
           </div>
@@ -134,7 +130,7 @@ export default function AboutUsPage() {
               <Home className="h-4 w-4" style={{ color: '#F5A623' }} />
             </div>
             <p className="text-xs sm:text-sm font-medium" style={{ color: '#171A1C' }}>
-              Want to know about Divine Bricks? Ask DivineGPT, the world's first AI-powered property search assistant.
+              Want to know about 3G Realtors? Ask DivineGPT, the world's first AI-powered property search assistant.
             </p>
           </div>
           <button
@@ -162,10 +158,10 @@ export default function AboutUsPage() {
                 Real Homes Live Here – India's Most Trusted Property Search Experience
               </h3>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                Welcome to Divine Bricks, India's premier real estate portal known for featuring the most authentic property listings in Mumbai, Delhi NCR, Bangalore, Hyderabad, Pune, Jaipur, Ahmedabad, Chennai, Kolkata and more. Whether you're looking to buy, rent or sell property, Divine Bricks is here to guide you through every step of your journey, making your real estate journey as seamless and effortless as possible.
+                Welcome to 3G Realtors, India's premier real estate portal known for featuring the most authentic property listings in Mumbai, Delhi NCR, Bangalore, Hyderabad, Pune, Jaipur, Ahmedabad, Chennai, Kolkata and more. Whether you're looking to buy, rent or sell property, 3G Realtors is here to guide you through every step of your journey, making your real estate journey as seamless and effortless as possible.
               </p>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                A part of Divine Group Holdings Limited, one of India's fastest-growing proptech companies, Divine Bricks connects buyers, sellers, tenants and brokers by providing a safe and user-friendly environment.
+                A part of Divine Group Holdings Limited, one of India's fastest-growing proptech companies, 3G Realtors connects buyers, sellers, tenants and brokers by providing a safe and user-friendly environment.
               </p>
               <Link
                 href="#"
@@ -251,7 +247,7 @@ export default function AboutUsPage() {
           </div>
 
           <p className="text-sm leading-relaxed mt-12 max-w-4xl" style={{ color: '#59636B' }}>
-            At Divine Bricks, we are committed to ensuring a high level of transparency, accuracy and trust in the real estate market. We work closely with top real estate agencies and developers across India to provide authentic and available listings and reliable information. Our dedication to quality and integrity has earned us the trust of millions of users and a reputation as a market leader.
+            At 3G Realtors, we are committed to ensuring a high level of transparency, accuracy and trust in the real estate market. We work closely with top real estate agencies and developers across India to provide authentic and available listings and reliable information. Our dedication to quality and integrity has earned us the trust of millions of users and a reputation as a market leader.
           </p>
         </div>
       </section>
@@ -265,7 +261,7 @@ export default function AboutUsPage() {
                 Our Investors
               </h2>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: '#59636B' }}>
-                Divine Group, Divine Bricks' parent company, is among the most well-funded proptech startups in India. It is backed by some of the biggest names in the industry including Sequoia Capital, Accel Partners, Prosus Ventures and Nexus Venture Partners, fortifying our position in the global classifieds industry.
+                Divine Group, 3G Realtors' parent company, is among the most well-funded proptech startups in India. It is backed by some of the biggest names in the industry including Sequoia Capital, Accel Partners, Prosus Ventures and Nexus Venture Partners, fortifying our position in the global classifieds industry.
               </p>
             </div>
             <div className="grid grid-cols-3 gap-4">
@@ -308,17 +304,17 @@ export default function AboutUsPage() {
                 Meet Aarav Mehta
               </h2>
               <p className="font-semibold mb-6 text-sm" style={{ color: '#F5A623' }}>
-                CEO Divine Bricks & Divine Group India
+                CEO 3G Realtors & Divine Group India
               </p>
 
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                Aarav Mehta moved to Mumbai from Silicon Valley in 2014 as the Chief Executive Officer of Divine Bricks, bringing over fifteen years of experience leading large-scale tech organisations. His guidance and technological innovations have been instrumental in the growth and expansion of Divine Bricks across India and have earned the company its national powerhouse status.
+                Aarav Mehta moved to Mumbai from Silicon Valley in 2014 as the Chief Executive Officer of 3G Realtors, bringing over fifteen years of experience leading large-scale tech organisations. His guidance and technological innovations have been instrumental in the growth and expansion of 3G Realtors across India and have earned the company its national powerhouse status.
               </p>
               <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-                Under his leadership, Divine Bricks has experienced great success with record-breaking revenue and significant year-on-year client growth.
+                Under his leadership, 3G Realtors has experienced great success with record-breaking revenue and significant year-on-year client growth.
               </p>
               <p className="text-sm md:text-base leading-relaxed" style={{ color: '#59636B' }}>
-                Aarav also leads India's largest online classifieds website, Divine Bricks. He has also taken over as CEO of the India arm of Divine Group Holdings Limited. Aarav also serves on the Board of Directors of NASSCOM.
+                Aarav also leads India's largest online classifieds website, 3G Realtors. He has also taken over as CEO of the India arm of Divine Group Holdings Limited. Aarav also serves on the Board of Directors of NASSCOM.
               </p>
             </div>
           </div>
@@ -517,7 +513,7 @@ export default function AboutUsPage() {
             {[
               { name: 'Profolio™', desc: 'The ultimate listing management solution.' },
               { name: 'ProConnect™', desc: 'A new way to help you connect, collaborate and close.' },
-              { name: 'Divine Bricks Academy', desc: 'Our exclusive training facility with curated courses for agents.' },
+              { name: '3G Realtors Academy', desc: 'Our exclusive training facility with curated courses for agents.' },
             ].map((tool, i) => (
               <div
                 key={i}
@@ -553,7 +549,7 @@ export default function AboutUsPage() {
             We love hearing from our users! Whether you have a question, want to share your feedback, or need assistance, feel free to reach out to us. You can also <a href="#" style={{ color: '#F5A623', textDecoration: 'underline' }}>contact us</a> through our website or social media channels.
           </p>
           <p className="text-sm md:text-base leading-relaxed mb-8" style={{ color: '#59636B' }}>
-            At Divine Bricks, you can discover a world of real estate possibilities in India. Your dream property is just a click away. Find your REAL home today.
+            At 3G Realtors, you can discover a world of real estate possibilities in India. Your dream property is just a click away. Find your REAL home today.
           </p>
         </div>
       </section>

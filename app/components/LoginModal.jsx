@@ -140,7 +140,7 @@ export default function LoginModal({ isOpen, onClose, onSwitchToRegister }) {
 
         {/* Footer — switch to register */}
         <div className="text-center text-xs mt-5 pt-4 border-t border-[#59636B]/15">
-          <span className="text-[#59636B]">New to Divine Bricks? </span>
+          <span className="text-[#59636B]">New to 3G Realtors? </span>
           <button
             onClick={onSwitchToRegister}
             className="text-[#F5A623] font-bold hover:underline"

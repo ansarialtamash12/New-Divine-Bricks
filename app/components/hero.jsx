@@ -548,21 +548,7 @@ export default function Hero() {
               )}
             </div>
 
-            {/* AI Promo */}
-            <div className="bg-gradient-to-r from-[#F7F4ED] via-white to-[#F7F4ED] px-4 sm:px-5 py-3.5 flex flex-col sm:flex-row items-center justify-between gap-2 border-t border-[#59636B]/15 rounded-b-3xl">
-              <div className="flex items-center gap-2.5">
-                <div className="w-8 h-8 bg-white rounded-full shadow-md flex items-center justify-center border border-[#F5A623]/20">
-                  <MessageSquare className="h-4 w-4 text-[#F5A623]" />
-                </div>
-                <p className="text-[11px] sm:text-xs text-[#171A1C] font-semibold">
-                  Want to find out more about India real estate using AI?
-                </p>
-              </div>
-              <button className="text-[#F5A623] hover:text-[#E09400] font-bold text-[11px] sm:text-xs flex items-center gap-1.5 whitespace-nowrap cursor-pointer group transition-all">
-                Try DivineGPT
-                <ArrowRight className="h-3.5 w-3.5 group-hover:translate-x-1 transition-transform" />
-              </button>
-            </div>
+            
           </div>
         </div>
       </div>

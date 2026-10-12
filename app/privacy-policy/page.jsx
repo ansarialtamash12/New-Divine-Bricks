@@ -37,7 +37,7 @@ export default function PrivacyPolicyPage() {
       id: 1,
       Icon: Shield,
       title: '1. Introduction',
-      content: `Divine Bricks ("we", "our", "us") is committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, store, and safeguard your personal information when you use our website, mobile application, or related services (collectively, the "Services").
+      content: `3G Realtors ("we", "our", "us") is committed to protecting your privacy and personal data. This Privacy Policy explains how we collect, use, disclose, store, and safeguard your personal information when you use our website, mobile application, or related services (collectively, the "Services").
 
 This policy is prepared in accordance with:
 • The Digital Personal Data Protection Act, 2023 (DPDP Act)
@@ -45,7 +45,7 @@ This policy is prepared in accordance with:
 • The Information Technology (Reasonable Security Practices and Procedures and Sensitive Personal Data or Information) Rules, 2011
 • The Real Estate (Regulation and Development) Act, 2016 (RERA)
 
-By using Divine Bricks, you consent to the data practices described in this Privacy Policy. If you do not agree, please discontinue use of our Services immediately.`,
+By using 3G Realtors, you consent to the data practices described in this Privacy Policy. If you do not agree, please discontinue use of our Services immediately.`,
     },
     {
       id: 2,
@@ -128,7 +128,7 @@ We engage trusted third-party vendors for:
 • Marketing and advertising partners
 
 **C) With Legal Authorities:**
-We may disclose information when required by law, court order, or government request, or to protect the rights, property, or safety of Divine Bricks, our users, or the public.
+We may disclose information when required by law, court order, or government request, or to protect the rights, property, or safety of 3G Realtors, our users, or the public.
 
 **D) Business Transfers:**
 In case of a merger, acquisition, or sale of assets, your information may be transferred to the new entity.
@@ -142,7 +142,7 @@ We may share information for other purposes with your explicit consent.
       id: 5,
       Icon: Cookie,
       title: '5. Cookies & Tracking Technologies',
-      content: `Divine Bricks uses cookies, web beacons, pixel tags, and similar technologies to enhance your experience.
+      content: `3G Realtors uses cookies, web beacons, pixel tags, and similar technologies to enhance your experience.
 
 **Types of Cookies We Use:**
 
@@ -167,7 +167,7 @@ We may share information for other purposes with your explicit consent.
 • Measure ad campaign effectiveness
 
 **Managing Cookies:**
-You can control cookies through your browser settings. However, disabling cookies may affect the functionality of certain features on Divine Bricks.
+You can control cookies through your browser settings. However, disabling cookies may affect the functionality of certain features on 3G Realtors.
 
 For more details, please review our Cookie Policy.`,
     },
@@ -251,7 +251,7 @@ For more details, refer to the DPDP Act, 2023.`,
       id: 9,
       Icon: Link2,
       title: '9. Third-Party Links & Services',
-      content: `Our Services may contain links to third-party websites, applications, or services that are not owned or controlled by Divine Bricks. These may include:
+      content: `Our Services may contain links to third-party websites, applications, or services that are not owned or controlled by 3G Realtors. These may include:
 
 • Real estate developer websites
 • Property listing aggregators
@@ -272,7 +272,7 @@ When you sign in using Google or Facebook, we receive limited profile informatio
       id: 10,
       Icon: Baby,
       title: '10. Children\'s Privacy',
-      content: `Divine Bricks is NOT intended for use by children under 18 years of age. We do not knowingly collect, use, or disclose personal information from children.
+      content: `3G Realtors is NOT intended for use by children under 18 years of age. We do not knowingly collect, use, or disclose personal information from children.
 
 **Our Commitment:**
 • We do not knowingly allow children under 18 to register accounts
@@ -291,7 +291,7 @@ Parents and guardians are encouraged to monitor their children's online activiti
       id: 11,
       Icon: Globe,
       title: '11. Cross-Border Data Transfers',
-      content: `Divine Bricks primarily stores and processes your data on servers located in India.
+      content: `3G Realtors primarily stores and processes your data on servers located in India.
 
 **Data Localization:**
 • Personal data of Indian users is stored on Indian servers
@@ -314,7 +314,7 @@ When we transfer data internationally, we ensure:
       id: 12,
       Icon: FileCheck,
       title: '12. Compliance with Indian Laws',
-      content: `Divine Bricks complies with all applicable Indian laws and regulations, including:
+      content: `3G Realtors complies with all applicable Indian laws and regulations, including:
 
 • **Digital Personal Data Protection Act, 2023** - Data protection framework
 • **Information Technology Act, 2000** - Cyber law compliance
@@ -350,7 +350,7 @@ The Grievance Officer will acknowledge your complaint within 24 hours and resolv
   - Provide a summary of key changes
 
 **Your Acceptance:**
-Your continued use of Divine Bricks after such changes constitutes your acceptance of the updated Privacy Policy. If you do not agree with the changes, you may:
+Your continued use of 3G Realtors after such changes constitutes your acceptance of the updated Privacy Policy. If you do not agree with the changes, you may:
 • Discontinue use of our Services
 • Delete your account
 • Contact us with your concerns
@@ -361,7 +361,7 @@ We encourage you to review this Privacy Policy periodically.`,
       id: 14,
       Icon: AlertCircle,
       title: '14. Data Breach Notification',
-      content: `In the unlikely event of a data breach, Divine Bricks is committed to transparent and prompt notification:
+      content: `In the unlikely event of a data breach, 3G Realtors is committed to transparent and prompt notification:
 
 **What We Will Do:**
 1. **Detect & Contain:** Immediately investigate and contain the breach
@@ -447,7 +447,7 @@ We aim to respond to all privacy-related inquiries within 30 days.`,
               Privacy Policy
             </h1>
             <p className="text-sm md:text-base text-white/80 max-w-2xl mx-auto">
-              Your privacy matters to us. Learn how Divine Bricks collects, uses, and protects your personal information.
+              Your privacy matters to us. Learn how 3G Realtors collects, uses, and protects your personal information.
             </p>
             <p className="text-xs text-white/60 mt-4">
               Last Updated: 9 October 2026
@@ -518,7 +518,7 @@ We aim to respond to all privacy-related inquiries within 30 days.`,
               Privacy Policy
             </h2>
             <p className="text-sm md:text-base max-w-2xl mx-auto" style={{ color: '#59636B' }}>
-              Learn how we collect, use, and protect your personal information when you use Divine Bricks.
+              Learn how we collect, use, and protect your personal information when you use 3G Realtors.
             </p>
           </div>
 

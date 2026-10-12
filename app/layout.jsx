@@ -11,9 +11,9 @@ const inter = Inter({
 });
 
 export const metadata = {
-  title: "Divine Bricks | Find your place in India",
+  title: "3G Realtors | Find your place in India",
   description:
-    "Explore homes for sale and rent across India with Divine Bricks.",
+    "Explore homes for sale and rent across India with 3G Realtors.",
 };
 
 export default function RootLayout({ children }) {
