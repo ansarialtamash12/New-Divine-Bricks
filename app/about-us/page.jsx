@@ -550,7 +550,9 @@ export default function AboutUsPage() {
             Get In Touch
           </h2>
           <p className="text-sm md:text-base leading-relaxed mb-4" style={{ color: '#59636B' }}>
-            We love hearing from our users! Whether you have a question, want to share your feedback, or need assistance, feel free to reach out to us. You can also <a href="#" style={{ color: '#F5A623', textDecoration: 'underline' }}>contact us</a> through our website or social media channels.
+            We love hearing from our users! Whether you have a question, want to share your feedback, or need assistance, feel free to reach out to us. You can also <Link href="/contact-us" style={{ color: '#F5A623', textDecoration: 'underline' }}>
+  contact us
+</Link> through our website or social media channels.
           </p>
           <p className="text-sm md:text-base leading-relaxed mb-8" style={{ color: '#59636B' }}>
             At Divine Bricks, you can discover a world of real estate possibilities in India. Your dream property is just a click away. Find your REAL home today.

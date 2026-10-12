@@ -141,12 +141,14 @@ export default function Footer() {
                 </a>
               ))}
             </div>
-
-            <img
+                <Link href="/">
+                 <img
               src="/3G_Realtors_Transparent.png"
               alt="Divine Bricks Logo"
               className="h-15 w-auto object-contain"
             />
+                </Link>
+           
           </div>
         </div>
 
