@@ -46,7 +46,11 @@ export default function AboutUsPage() {
       title: 'Comprehensive Listings',
       desc: 'Explore a vast database of residential and commercial properties including apartments, villas, offices and more across India.',
     },
-   
+    {
+      Icon: CheckSquare,
+      title: 'Advanced Tools',
+      desc: 'Our cutting-edge products such as TruCheck™, TruBroker™, TruEstimate™, DivineGPT, India Transactions and more help you find properties quickly and easily.',
+    },
     {
       Icon: BarChart3,
       title: 'Market Insights',
