@@ -119,32 +119,7 @@ export default function AboutUsPage() {
         </div>
       </section>
 
-      {/* ================= 2. AI BANNER STRIP ================= */}
-      <section className="w-full" style={{ backgroundColor: '#F7F4ED' }}>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex flex-col sm:flex-row items-center justify-between gap-3">
-          <div className="flex items-center gap-3">
-            <div
-              className="w-9 h-9 rounded-full flex items-center justify-center border"
-              style={{ backgroundColor: '#FFFFFF', borderColor: '#F5A623' }}
-            >
-              <Home className="h-4 w-4" style={{ color: '#F5A623' }} />
-            </div>
-            <p className="text-xs sm:text-sm font-medium" style={{ color: '#171A1C' }}>
-              Want to know about 3G Realtors? Ask DivineGPT, the world's first AI-powered property search assistant.
-            </p>
-          </div>
-          <button
-            className="px-5 py-2.5 rounded-xl font-bold text-xs sm:text-sm hover:-translate-y-0.5 transition-all whitespace-nowrap"
-            style={{
-              backgroundColor: '#F5A623',
-              color: '#171A1C',
-              boxShadow: '0 4px 16px rgba(245, 166, 35, 0.3)',
-            }}
-          >
-            Ask DivineGPT
-          </button>
-        </div>
-      </section>
+    
 
       {/* ================= 3. ABOUT US ================= */}
       <section className="w-full py-16 md:py-20" style={{ backgroundColor: '#FFFFFF' }}>
