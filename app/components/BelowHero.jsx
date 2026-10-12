@@ -10,7 +10,7 @@ export default function BelowHero() {
 
   return (
     <>
-      <section className="w-full max-w-7xl mx-auto px-4 py-10">
+    <section className="relative z-0 w-full max-w-7xl mx-auto px-4 py-10">
         <div className="flex flex-col lg:flex-row gap-4">
 
           {/* BANNER 1 */}
