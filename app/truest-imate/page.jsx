@@ -91,7 +91,7 @@ export default function TruEstimatePage() {
           </p>
 
           {/* TABS */}
-          <div className="flex justify-center mb-0">
+          <div className="flex justify-center mb-6">
             <div className="bg-white rounded-t-2xl shadow-lg flex items-center px-2 py-1 gap-1 flex-wrap justify-center">
               {tabs.map((tab) => (
                 <button
