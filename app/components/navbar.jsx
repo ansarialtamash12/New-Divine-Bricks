@@ -77,16 +77,15 @@ export default function Navbar() {
                       : "px-0 py-0 bg-transparent border border-transparent"
                   }`}
                 >
-           <img
-  src="/3G_Realtors_Transparent.png"
-  alt="3G Realtors"
-  className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
-    isTransparent
-      ? "h-8 sm:h-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110" 
-      : "h-9 sm:h-11" 
-  }`}
-/>
-
+                  <img
+                    src="/3G_Realtors_Transparent.png"
+                    alt="3G Realtors"
+                    className={`object-contain w-auto transition-all duration-500 ease-out group-hover:scale-[1.03] ${
+                      isTransparent
+                        ? "h-8 sm:h-10 drop-shadow-[0_2px_10px_rgba(0,0,0,0.5)] brightness-110"
+                        : "h-9 sm:h-11"
+                    }`}
+                  />
                 </div>
               </Link>
             </div>
@@ -103,15 +102,15 @@ export default function Navbar() {
                       isTransparent && !isActive
                         ? { color: "#ffffff" }
                         : isActive
-                        ? { color: "#F5A623" }
-                        : { color: "#171A1C" }
+                          ? { color: "#F5A623" }
+                          : { color: "#171A1C" }
                     }
                     className={`relative text-sm font-medium transition-all duration-200 px-3 py-2 rounded-xl whitespace-nowrap ${
                       isActive
                         ? "bg-[#F5A623]/10"
                         : isTransparent
-                        ? "hover:text-[#F5A623] hover:bg-white/10"
-                        : "hover:text-[#F5A623] hover:bg-[#F5A623]/10"
+                          ? "hover:text-[#F5A623] hover:bg-white/10"
+                          : "hover:text-[#F5A623] hover:bg-[#F5A623]/10"
                     }`}
                   >
                     {link.name}
