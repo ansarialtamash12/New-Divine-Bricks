@@ -2,7 +2,7 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 
 import Navbar from "./components/navbar";
-import Footer from "./components/footer"
+import Footer from "./components/footer";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -12,8 +12,7 @@ const inter = Inter({
 
 export const metadata = {
   title: "3G Realtors | Find your place in India",
-  description:
-    "Explore homes for sale and rent across India with 3G Realtors.",
+  description: "Explore homes for sale and rent across India with 3G Realtors.",
 };
 
 export default function RootLayout({ children }) {
@@ -24,7 +23,7 @@ export default function RootLayout({ children }) {
 
         <main className="flex-1 w-full flex flex-col">{children}</main>
 
-        <Footer/>
+        <Footer />
       </body>
     </html>
   );
