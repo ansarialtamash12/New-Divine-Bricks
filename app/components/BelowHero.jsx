@@ -1,4 +1,4 @@
-'use client';
+"use client";
 
 import React, { useState } from "react";
 import { ArrowRight, Building2, Car, Map, Landmark } from "lucide-react";
@@ -10,9 +10,8 @@ export default function BelowHero() {
 
   return (
     <>
-    <section className="relative z-0 w-full max-w-7xl mx-auto px-4 py-10">
+      <section className="relative z-0 w-full max-w-7xl mx-auto px-4 py-10">
         <div className="flex flex-col lg:flex-row gap-4">
-
           {/* BANNER 1 */}
           <div className="relative overflow-hidden rounded-3xl bg-gradient-to-br from-[#171A1C] via-[#0f1214] to-[#171A1C] flex flex-col md:flex-row items-center justify-between p-6 md:p-8 min-h-[200px] shadow-elevated lg:flex-[1.4]">
             <div className="absolute -top-16 -left-16 w-64 h-64 bg-[#F5A623]/20 rounded-full blur-3xl pointer-events-none" />
@@ -49,10 +48,10 @@ export default function BelowHero() {
               {/* Avatar Stack */}
               <div className="flex -space-x-3">
                 {[
-                  'https://i.pravatar.cc/150?img=1',
-                  'https://i.pravatar.cc/150?img=2',
-                  'https://i.pravatar.cc/150?img=3',
-                  'https://i.pravatar.cc/150?img=4',
+                  "https://i.pravatar.cc/150?img=1",
+                  "https://i.pravatar.cc/150?img=2",
+                  "https://i.pravatar.cc/150?img=3",
+                  "https://i.pravatar.cc/150?img=4",
                 ].map((src, i) => (
                   <img
                     key={i}
@@ -82,43 +81,13 @@ export default function BelowHero() {
               Find My Agent <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
-
-        </div>
-
-        {/* FEATURE CARDS */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mt-4">
-          {[
-            { title: 'TruEstimate™', desc: 'Find out how much your property is worth', cta: 'Find out how much', Icon: Landmark, color: 'text-[#F5A623]', bg: 'from-[#F5A623]/10' },
-            { title: 'Search 2.0', desc: 'Find homes by drive time', cta: 'Find homes', Icon: Car, color: 'text-[#59636B]', bg: 'from-[#59636B]/10' },
-            { title: 'Map View', desc: 'Search for properties in preferred areas using a map', cta: 'Search for properties', Icon: Map, color: 'text-[#F5A623]', bg: 'from-[#F5A623]/10' },
-          ].map((card, i) => (
-            <div
-              key={i}
-              className="group relative bg-[#F7F4ED] border border-[#59636B]/15 rounded-3xl p-6 flex flex-col justify-between overflow-hidden min-h-[220px] shadow-soft hover:shadow-floating hover:-translate-y-1 transition-all duration-300 cursor-pointer"
-            >
-              <div className={`absolute inset-0 bg-gradient-to-br ${card.bg} to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300`} />
-
-              <div className="relative z-10">
-                <h3 className="text-xl font-bold text-[#171A1C] mb-2 tracking-tight">
-                  {card.title}
-                </h3>
-                <p className="text-[#59636B] text-sm mb-5 leading-relaxed">
-                  {card.desc}
-                </p>
-                <button className="text-sm font-semibold text-[#F5A623] flex items-center gap-1.5 group-hover:gap-3 transition-all duration-300">
-                  {card.cta} <ArrowRight className="w-4 h-4" />
-                </button>
-              </div>
-
-              <div className="absolute bottom-4 right-4 pointer-events-none">
-                <card.Icon className={`w-24 h-24 ${card.color} opacity-10 group-hover:opacity-20 group-hover:scale-110 transition-all duration-500`} />
-              </div>
-            </div>
-          ))}
         </div>
       </section>
 
-      <SellModal isOpen={isSellModalOpen} onClose={() => setIsSellModalOpen(false)} />
+      <SellModal
+        isOpen={isSellModalOpen}
+        onClose={() => setIsSellModalOpen(false)}
+      />
     </>
   );
 }

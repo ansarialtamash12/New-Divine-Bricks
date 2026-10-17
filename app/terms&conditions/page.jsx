@@ -1,7 +1,7 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Link from 'next/link';
+import React, { useState } from "react";
+import Link from "next/link";
 import {
   FileText,
   Lock,
@@ -22,7 +22,7 @@ import {
   RefreshCw,
   Gavel,
   MessageSquare,
-} from 'lucide-react';
+} from "lucide-react";
 
 export default function TermsPage() {
   const [openSection, setOpenSection] = useState(null);
@@ -33,7 +33,7 @@ export default function TermsPage() {
     {
       id: 1,
       Icon: FileText,
-      title: '1. Acceptance of Terms',
+      title: "1. Acceptance of Terms",
       content: `Welcome to 3G Realtors ("Company", "we", "our", "us"). By accessing or using our website, mobile application, or any related services (collectively, the "Services"), you agree to be bound by these Terms and Conditions ("Terms"). 
 
 If you do not agree with any part of these Terms, you must immediately discontinue use of our Services. Your continued use of 3G Realtors constitutes your acceptance of these Terms and any future amendments.`,
@@ -41,7 +41,7 @@ If you do not agree with any part of these Terms, you must immediately discontin
     {
       id: 2,
       Icon: UserCheck,
-      title: '2. Eligibility & Registration',
+      title: "2. Eligibility & Registration",
       content: `You must be at least 18 years of age and legally capable of entering into binding contracts under the Indian Contract Act, 1872. By using 3G Realtors, you represent and warrant that:
 
 • You are at least 18 years old
@@ -54,7 +54,7 @@ To access certain features, you must register as a user by creating an account. 
     {
       id: 3,
       Icon: Building2,
-      title: '3. Property Listings & Content',
+      title: "3. Property Listings & Content",
       content: `All property listings, descriptions, images, floor plans, pricing, and other content on 3G Realtors are provided by:
 • Property owners and landlords
 • Licensed real estate agents and brokers
@@ -73,7 +73,7 @@ While we strive to ensure accuracy, 3G Realtors does not guarantee the completen
     {
       id: 4,
       Icon: IndianRupee,
-      title: '4. Listing Services & Fees',
+      title: "4. Listing Services & Fees",
       content: `3G Realtors offers both free and paid services:
 
 **Free Services:**
@@ -95,7 +95,7 @@ All fees are in Indian Rupees (INR) and are subject to applicable GST. Payments 
     {
       id: 5,
       Icon: Ban,
-      title: '5. Prohibited Conduct',
+      title: "5. Prohibited Conduct",
       content: `By using 3G Realtors, you agree NOT to:
 
 • Post false, misleading, or fraudulent property listings
@@ -119,7 +119,7 @@ Violation of these rules may result in:
     {
       id: 6,
       Icon: Copyright,
-      title: '6. Intellectual Property Rights',
+      title: "6. Intellectual Property Rights",
       content: `All content on 3G Realtors — including but not limited to:
 
 • Logos, brand names, and trademarks
@@ -141,7 +141,7 @@ You may NOT:
     {
       id: 7,
       Icon: AlertCircle,
-      title: '7. Disclaimer of Warranties',
+      title: "7. Disclaimer of Warranties",
       content: `3G Realtors provides its Services on an "as is" and "as available" basis. We make NO warranties, express or implied, including but not limited to:
 
 • Accuracy or completeness of property listings
@@ -161,7 +161,7 @@ All transactions are at your own risk. Always consult legal, financial, and tax 
     {
       id: 8,
       Icon: Scale,
-      title: '8. Limitation of Liability',
+      title: "8. Limitation of Liability",
       content: `To the maximum extent permitted by law, 3G Realtors and its parent company, directors, employees, and affiliates shall NOT be liable for any:
 
 • Indirect, incidental, special, or consequential damages
@@ -178,7 +178,7 @@ This limitation applies regardless of the legal theory (contract, tort, negligen
     {
       id: 9,
       Icon: Lock,
-      title: '9. Privacy & Data Protection',
+      title: "9. Privacy & Data Protection",
       content: `Your privacy is important to us. Our collection, use, and protection of your personal data is governed by our Privacy Policy, which is incorporated into these Terms by reference.
 
 By using 3G Realtors, you consent to:
@@ -192,7 +192,7 @@ You can manage your communication preferences from your account settings. To del
     {
       id: 10,
       Icon: ShieldCheck,
-      title: '10. Third-Party Services & Links',
+      title: "10. Third-Party Services & Links",
       content: `3G Realtors may contain links to third-party websites, services, or advertisements. We are NOT responsible for:
 
 • The content, accuracy, or privacy practices of third parties
@@ -204,7 +204,7 @@ Your interactions with third parties are governed by their own terms and conditi
     {
       id: 11,
       Icon: RefreshCw,
-      title: '11. Modifications to Terms',
+      title: "11. Modifications to Terms",
       content: `3G Realtors reserves the right to modify these Terms at any time without prior notice. When we make significant changes, we will:
 
 • Post a prominent notice on our website
@@ -216,7 +216,7 @@ Your continued use of 3G Realtors after such modifications constitutes your acce
     {
       id: 12,
       Icon: Gavel,
-      title: '12. Governing Law & Dispute Resolution',
+      title: "12. Governing Law & Dispute Resolution",
       content: `These Terms shall be governed by and construed in accordance with the laws of India.
 
 **Jurisdiction:** Any disputes arising out of or relating to these Terms or the use of 3G Realtors shall be subject to the exclusive jurisdiction of the courts in Mumbai, Maharashtra, India.
@@ -232,7 +232,7 @@ Your continued use of 3G Realtors after such modifications constitutes your acce
     {
       id: 13,
       Icon: UserCheck,
-      title: '13. Termination of Account',
+      title: "13. Termination of Account",
       content: `3G Realtors reserves the right to suspend or terminate your account at any time, with or without notice, for:
 
 • Violation of these Terms
@@ -250,7 +250,7 @@ Upon termination:
     {
       id: 14,
       Icon: Scale,
-      title: '14. Indemnification',
+      title: "14. Indemnification",
       content: `You agree to indemnify and hold harmless 3G Realtors, its parent company, directors, officers, employees, and agents from any and all claims, damages, losses, liabilities, costs, and expenses (including legal fees) arising from:
 
 • Your violation of these Terms
@@ -264,7 +264,7 @@ This indemnification obligation will survive the termination of your account and
     {
       id: 15,
       Icon: MessageSquare,
-      title: '15. Contact Us',
+      title: "15. Contact Us",
       content: `If you have any questions, concerns, or complaints about these Terms and Conditions, please contact us:
 
 **Legal Team:**
@@ -286,8 +286,10 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
   ];
 
   return (
-    <div className="w-full flex flex-col font-sans overflow-x-hidden" style={{ backgroundColor: '#FFFFFF' }}>
-
+    <div
+      className="w-full flex flex-col font-sans overflow-x-hidden"
+      style={{ backgroundColor: "#FFFFFF" }}
+    >
       {/* ================= 1. HERO ================= */}
       <section className="relative w-full h-[320px] md:h-[380px] lg:h-[420px] overflow-hidden bg-[#171A1C]">
         <img
@@ -299,7 +301,7 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
           className="absolute inset-0"
           style={{
             background:
-              'linear-gradient(to bottom, rgba(23,26,28,0.6) 0%, rgba(23,26,28,0.4) 50%, rgba(23,26,28,0.9) 100%)',
+              "linear-gradient(to bottom, rgba(23,26,28,0.6) 0%, rgba(23,26,28,0.4) 50%, rgba(23,26,28,0.9) 100%)",
           }}
         />
 
@@ -308,9 +310,9 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
             <span
               className="inline-block px-4 py-1.5 rounded-full text-xs font-bold tracking-widest uppercase mb-5"
               style={{
-                backgroundColor: 'rgba(245, 166, 35, 0.15)',
-                color: '#F5A623',
-                border: '1px solid #F5A623',
+                backgroundColor: "rgba(245, 166, 35, 0.15)",
+                color: "#F5A623",
+                border: "1px solid #F5A623",
               }}
             >
               Legal
@@ -319,7 +321,8 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
               Terms & Conditions
             </h1>
             <p className="text-sm md:text-base text-white/80 max-w-2xl mx-auto">
-              Please read these terms carefully before using 3G Realtors. By using our Services, you agree to be bound by these terms.
+              Please read these terms carefully before using 3G Realtors. By
+              using our Services, you agree to be bound by these terms.
             </p>
             <p className="text-xs text-white/60 mt-4">
               Last Updated: 9 October 2026
@@ -329,45 +332,61 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
       </section>
 
       {/* ================= 2. QUICK SUMMARY CARDS ================= */}
-      <section className="w-full py-14 md:py-16" style={{ backgroundColor: '#FFFFFF' }}>
+      <section
+        className="w-full py-14 md:py-16"
+        style={{ backgroundColor: "#FFFFFF" }}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 md:grid-cols-3 gap-5">
             {[
               {
                 Icon: Lock,
-                title: 'Your Data is Safe',
-                desc: 'We use industry-standard encryption to protect your personal information.',
+                title: "Your Data is Safe",
+                desc: "We use industry-standard encryption to protect your personal information.",
               },
               {
                 Icon: UserCheck,
-                title: 'You Are in Control',
-                desc: 'Access, correct, or delete your data anytime through your account.',
+                title: "You Are in Control",
+                desc: "Access, correct, or delete your data anytime through your account.",
               },
               {
                 Icon: Scale,
-                title: 'Fair & Transparent',
-                desc: 'Clear terms, no hidden clauses, and full transparency in all dealings.',
+                title: "Fair & Transparent",
+                desc: "Clear terms, no hidden clauses, and full transparency in all dealings.",
               },
             ].map((item, i) => (
               <div
                 key={i}
                 className="rounded-2xl p-6 border transition-all duration-300 hover:-translate-y-1"
                 style={{
-                  backgroundColor: '#F7F4ED',
-                  borderColor: '#E8E2D5',
-                  boxShadow: '0 4px 20px rgba(23, 26, 28, 0.04)',
+                  backgroundColor: "#F7F4ED",
+                  borderColor: "#E8E2D5",
+                  boxShadow: "0 4px 20px rgba(23, 26, 28, 0.04)",
                 }}
               >
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mb-5"
-                  style={{ backgroundColor: '#FFFFFF', border: '1px solid #F5A623' }}
+                  style={{
+                    backgroundColor: "#FFFFFF",
+                    border: "1px solid #F5A623",
+                  }}
                 >
-                  <item.Icon className="w-7 h-7" style={{ color: '#F5A623' }} strokeWidth={1.8} />
+                  <item.Icon
+                    className="w-7 h-7"
+                    style={{ color: "#F5A623" }}
+                    strokeWidth={1.8}
+                  />
                 </div>
-                <h3 className="text-base font-bold mb-2 tracking-tight" style={{ color: '#171A1C' }}>
+                <h3
+                  className="text-base font-bold mb-2 tracking-tight"
+                  style={{ color: "#171A1C" }}
+                >
                   {item.title}
                 </h3>
-                <p className="text-xs leading-relaxed" style={{ color: '#59636B' }}>
+                <p
+                  className="text-xs leading-relaxed"
+                  style={{ color: "#59636B" }}
+                >
                   {item.desc}
                 </p>
               </div>
@@ -377,15 +396,24 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
       </section>
 
       {/* ================= 3. CONTENT SECTIONS ================= */}
-      <section className="w-full py-16 md:py-20" style={{ backgroundColor: '#F7F4ED' }}>
+      <section
+        className="w-full py-16 md:py-20"
+        style={{ backgroundColor: "#F7F4ED" }}
+      >
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-
           <div className="mb-10 text-center">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight" style={{ color: '#171A1C' }}>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-3 tracking-tight"
+              style={{ color: "#171A1C" }}
+            >
               Terms & Conditions
             </h2>
-            <p className="text-sm md:text-base max-w-2xl mx-auto" style={{ color: '#59636B' }}>
-              These terms govern your use of 3G Realtors and its services. Please read them carefully.
+            <p
+              className="text-sm md:text-base max-w-2xl mx-auto"
+              style={{ color: "#59636B" }}
+            >
+              These terms govern your use of 3G Realtors and its services.
+              Please read them carefully.
             </p>
           </div>
 
@@ -398,9 +426,11 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
                   key={section.id}
                   className="rounded-2xl overflow-hidden border transition-all duration-300"
                   style={{
-                    backgroundColor: '#FFFFFF',
-                    borderColor: isOpen ? '#F5A623' : '#E8E2D5',
-                    boxShadow: isOpen ? '0 8px 24px rgba(245, 166, 35, 0.1)' : '0 2px 8px rgba(23, 26, 28, 0.03)',
+                    backgroundColor: "#FFFFFF",
+                    borderColor: isOpen ? "#F5A623" : "#E8E2D5",
+                    boxShadow: isOpen
+                      ? "0 8px 24px rgba(245, 166, 35, 0.1)"
+                      : "0 2px 8px rgba(23, 26, 28, 0.03)",
                   }}
                 >
                   <button
@@ -411,19 +441,21 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
                       <div
                         className="w-10 h-10 rounded-xl flex items-center justify-center shrink-0 transition-all"
                         style={{
-                          backgroundColor: isOpen ? '#F5A623' : '#F7F4ED',
-                          border: isOpen ? '1px solid #F5A623' : '1px solid #E8E2D5',
+                          backgroundColor: isOpen ? "#F5A623" : "#F7F4ED",
+                          border: isOpen
+                            ? "1px solid #F5A623"
+                            : "1px solid #E8E2D5",
                         }}
                       >
                         <section.Icon
                           className="w-5 h-5"
-                          style={{ color: isOpen ? '#171A1C' : '#F5A623' }}
+                          style={{ color: isOpen ? "#171A1C" : "#F5A623" }}
                           strokeWidth={1.8}
                         />
                       </div>
                       <span
                         className="text-sm md:text-base font-bold tracking-tight"
-                        style={{ color: '#171A1C' }}
+                        style={{ color: "#171A1C" }}
                       >
                         {section.title}
                       </span>
@@ -431,8 +463,8 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
                     <div
                       className="w-8 h-8 rounded-full flex items-center justify-center shrink-0 transition-all"
                       style={{
-                        backgroundColor: isOpen ? '#F5A623' : '#F7F4ED',
-                        color: isOpen ? '#171A1C' : '#F5A623',
+                        backgroundColor: isOpen ? "#F5A623" : "#F7F4ED",
+                        color: isOpen ? "#171A1C" : "#F5A623",
                       }}
                     >
                       {isOpen ? (
@@ -446,9 +478,11 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
                   {isOpen && (
                     <div
                       className="px-5 md:px-6 pb-5 md:pb-6 text-sm leading-relaxed border-t"
-                      style={{ color: '#59636B', borderColor: '#F7F4ED' }}
+                      style={{ color: "#59636B", borderColor: "#F7F4ED" }}
                     >
-                      <div className="pt-5 whitespace-pre-line">{section.content}</div>
+                      <div className="pt-5 whitespace-pre-line">
+                        {section.content}
+                      </div>
                     </div>
                   )}
                 </div>
@@ -459,36 +493,54 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
       </section>
 
       {/* ================= 4. ACKNOWLEDGEMENT ================= */}
-      <section className="w-full py-14 md:py-16" style={{ backgroundColor: '#FFFFFF' }}>
+      <section
+        className="w-full py-14 md:py-16"
+        style={{ backgroundColor: "#FFFFFF" }}
+      >
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <div
             className="rounded-3xl p-8 md:p-10 border text-center"
             style={{
-              backgroundColor: '#F7F4ED',
-              borderColor: '#F5A623',
-              boxShadow: '0 8px 32px rgba(245, 166, 35, 0.08)',
+              backgroundColor: "#F7F4ED",
+              borderColor: "#F5A623",
+              boxShadow: "0 8px 32px rgba(245, 166, 35, 0.08)",
             }}
           >
             <div
               className="w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-5"
-              style={{ backgroundColor: '#FFFFFF', border: '1px solid #F5A623' }}
+              style={{
+                backgroundColor: "#FFFFFF",
+                border: "1px solid #F5A623",
+              }}
             >
-              <CheckCircle2 className="w-8 h-8" style={{ color: '#F5A623' }} strokeWidth={1.8} />
+              <CheckCircle2
+                className="w-8 h-8"
+                style={{ color: "#F5A623" }}
+                strokeWidth={1.8}
+              />
             </div>
-            <h2 className="text-2xl md:text-3xl font-bold mb-3 tracking-tight" style={{ color: '#171A1C' }}>
+            <h2
+              className="text-2xl md:text-3xl font-bold mb-3 tracking-tight"
+              style={{ color: "#171A1C" }}
+            >
               By Using 3G Realtors, You Agree
             </h2>
-            <p className="text-sm md:text-base leading-relaxed mb-6" style={{ color: '#59636B' }}>
-              Your continued use of our Services constitutes your acceptance of these Terms and Conditions. If you have any concerns, please contact us before continuing to use the platform.
+            <p
+              className="text-sm md:text-base leading-relaxed mb-6"
+              style={{ color: "#59636B" }}
+            >
+              Your continued use of our Services constitutes your acceptance of
+              these Terms and Conditions. If you have any concerns, please
+              contact us before continuing to use the platform.
             </p>
             <div className="flex flex-col sm:flex-row items-center justify-center gap-3">
               <Link
                 href="/contact-us"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm transition-all hover:-translate-y-0.5"
                 style={{
-                  backgroundColor: '#F5A623',
-                  color: '#171A1C',
-                  boxShadow: '0 8px 24px rgba(245, 166, 35, 0.35)',
+                  backgroundColor: "#F5A623",
+                  color: "#171A1C",
+                  boxShadow: "0 8px 24px rgba(245, 166, 35, 0.35)",
                 }}
               >
                 <Mail className="w-4 h-4" /> Contact Legal Team
@@ -496,7 +548,11 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
               <Link
                 href="/about-us"
                 className="inline-flex items-center gap-2 px-6 py-3 rounded-xl font-bold text-sm border-2 transition-all hover:-translate-y-0.5"
-                style={{ borderColor: '#F5A623', color: '#F5A623', backgroundColor: 'transparent' }}
+                style={{
+                  borderColor: "#F5A623",
+                  color: "#F5A623",
+                  backgroundColor: "transparent",
+                }}
               >
                 Learn About Us
               </Link>
@@ -506,14 +562,24 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
       </section>
 
       {/* ================= 5. CONTACT INFO ================= */}
-      <section className="w-full py-16 md:py-20" style={{ backgroundColor: '#F7F4ED' }}>
+      <section
+        className="w-full py-16 md:py-20"
+        style={{ backgroundColor: "#F7F4ED" }}
+      >
         <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
-            <h2 className="text-3xl md:text-4xl font-bold mb-3 tracking-tight" style={{ color: '#171A1C' }}>
+            <h2
+              className="text-3xl md:text-4xl font-bold mb-3 tracking-tight"
+              style={{ color: "#171A1C" }}
+            >
               Have Legal Questions?
             </h2>
-            <p className="text-sm md:text-base max-w-2xl mx-auto" style={{ color: '#59636B' }}>
-              Our legal team is here to help. Reach out for any clarification regarding our terms.
+            <p
+              className="text-sm md:text-base max-w-2xl mx-auto"
+              style={{ color: "#59636B" }}
+            >
+              Our legal team is here to help. Reach out for any clarification
+              regarding our terms.
             </p>
           </div>
 
@@ -521,24 +587,24 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
             {[
               {
                 Icon: Mail,
-                title: 'Email',
-                line1: 'legal@3Gbricks.com',
-                line2: 'We reply within 48 hours',
-                href: 'mailto:legal@3Gbricks.com',
+                title: "Email",
+                line1: "legal@3Gbricks.com",
+                line2: "We reply within 48 hours",
+                href: "mailto:legal@3Gbricks.com",
               },
               {
                 Icon: Phone,
-                title: 'Phone',
-                line1: '+91 22 4890 1234',
-                line2: 'Mon-Fri · 9 AM - 7 PM IST',
-                href: 'tel:+912248901234',
+                title: "Phone",
+                line1: "+91 22 4890 1234",
+                line2: "Mon-Fri · 9 AM - 7 PM IST",
+                href: "tel:+912248901234",
               },
               {
                 Icon: MapPin,
-                title: 'Address',
-                line1: '3G Group Tower',
-                line2: 'BKC, Mumbai - 400051',
-                href: '#',
+                title: "Address",
+                line1: "3G Group Tower",
+                line2: "BKC, Mumbai - 400051",
+                href: "#",
               },
             ].map((item, i) => (
               <a
@@ -546,24 +612,37 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
                 href={item.href}
                 className="rounded-2xl p-7 border transition-all duration-300 hover:-translate-y-1 text-center block"
                 style={{
-                  backgroundColor: '#FFFFFF',
-                  borderColor: '#E8E2D5',
-                  boxShadow: '0 4px 20px rgba(23, 26, 28, 0.04)',
+                  backgroundColor: "#FFFFFF",
+                  borderColor: "#E8E2D5",
+                  boxShadow: "0 4px 20px rgba(23, 26, 28, 0.04)",
                 }}
               >
                 <div
                   className="w-14 h-14 rounded-2xl flex items-center justify-center mx-auto mb-5"
-                  style={{ backgroundColor: '#F7F4ED', border: '1px solid #F5A623' }}
+                  style={{
+                    backgroundColor: "#F7F4ED",
+                    border: "1px solid #F5A623",
+                  }}
                 >
-                  <item.Icon className="w-7 h-7" style={{ color: '#F5A623' }} strokeWidth={1.8} />
+                  <item.Icon
+                    className="w-7 h-7"
+                    style={{ color: "#F5A623" }}
+                    strokeWidth={1.8}
+                  />
                 </div>
-                <h3 className="text-lg font-bold mb-3 tracking-tight" style={{ color: '#171A1C' }}>
+                <h3
+                  className="text-lg font-bold mb-3 tracking-tight"
+                  style={{ color: "#171A1C" }}
+                >
                   {item.title}
                 </h3>
-                <p className="text-sm font-semibold mb-1" style={{ color: '#171A1C' }}>
+                <p
+                  className="text-sm font-semibold mb-1"
+                  style={{ color: "#171A1C" }}
+                >
                   {item.line1}
                 </p>
-                <p className="text-xs" style={{ color: '#59636B' }}>
+                <p className="text-xs" style={{ color: "#59636B" }}>
                   {item.line2}
                 </p>
               </a>
@@ -571,7 +650,6 @@ For reporting fake listings, please write to: report@3Gbricks.com`,
           </div>
         </div>
       </section>
-
     </div>
   );
 }
