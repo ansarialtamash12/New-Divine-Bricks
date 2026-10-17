@@ -244,17 +244,17 @@ export default function AgentsSection() {
               <div className="flex gap-2.5">
                 <Link
                   href="/find-agent"
-                  className="flex-1 text-center py-3 rounded-xl text-sm font-bold transition-all active:scale-95 hover:shadow-lg"
+                  className="flex-1 text-center py-3 rounded-xl text-sm font-semibold transition-all active:scale-95 hover:shadow-lg"
                   style={{
-                    backgroundColor: '#171A1C',
-                    color: '#FFFFFF',
+                    backgroundColor: '#F5A623',
+                    color: 'black',
                   }}
                 >
                   Contact Agent
                 </Link>
                 <Link
                   href="/find-agent"
-                  className="flex-1 text-center py-3 rounded-xl text-sm font-bold border transition-all active:scale-95 hover:bg-[#F7F4ED]"
+                  className="flex-1 text-center py-3 rounded-xl text-sm font-semibold border transition-all active:scale-95 hover:bg-[#F7F4ED]"
                   style={{
                     borderColor: '#E8E2D5',
                     color: '#171A1C',
